@@ -1,0 +1,65 @@
+make工程管理器：
+makefile  Makefile --make先执行小写makefile
+小项目gcc编译的快大项目的话要是发现需要改一个文件就可能会需要整个工程重新编译会很慢，所以需要工程管理器
+
+
+a.out -> main.o tool1.o tool2.o 
+main.o -> main.c 
+tool1.o -> tool1.c 
+tool2.o -> tool2.c
+
+vim makefile
+
+mytool:main.o tool1.o tool2.o
+        gcc main.o tool1.o tool2.o -o mytool
+
+main.o:main.c
+        gcc main.c -c -Wall -o main.o
+
+tool1.o:tool1.c
+        gcc tool1.c -c -Wall -o tool1.o
+
+tool2.o:tool2.c
+        gcc tool2.c -c -Wall -o tool2.o  
+
+clean:
+		rm -f *.o mytool core
+
+
+///////////////////////////////////////////////
+
+
+
+demo:helloworld.c
+        gcc -Wall -std=c99 helloworld.c -o helloworld
+
+clean:
+        -rm -f *.o helloworld core
+
+
+
+
+然后就生成了一个可执行文件  mytool
+
+vim helloworld.sh 
+
+#!/bin/bash
+echo "Hello world"
+mkdir newfolder
+:wq
+
+chmod +x helloworld.sh
+
+
+chmod 设置模式 文件名
+模式：操作 权限
+操作：    
+：增加权限
+-：减少权限
+=：设定权限
+权限：
+w：写
+r：读
+x：excutable可执行，没权限进不去
+
+
