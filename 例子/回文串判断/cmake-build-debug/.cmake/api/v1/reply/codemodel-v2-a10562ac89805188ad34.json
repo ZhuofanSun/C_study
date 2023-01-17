@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "huiwenchuanpanduan",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "huiwenchuanpanduan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-huiwenchuanpanduan-Debug-41fbdd98d8bb5faf4f57.json",
+					"name" : "huiwenchuanpanduan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stringg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stringg-Debug-6848cdd942a0be724da8.json",
+					"name" : "stringg",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/sunzhuofan/Desktop/C/\u56de\u6587\u4e32\u5224\u65ad/cmake-build-debug",
+		"source" : "/Users/sunzhuofan/Desktop/C/\u56de\u6587\u4e32\u5224\u65ad"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

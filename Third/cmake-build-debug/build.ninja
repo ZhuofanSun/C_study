@@ -1,0 +1,187 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: Third
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/sunzhuofan/Desktop/C/Third/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target Third
+
+
+#############################################
+# Order-only phony target for Third
+
+build cmake_object_order_depends_target_Third: phony || CMakeFiles/Third.dir
+
+build CMakeFiles/Third.dir/main.c.o: C_COMPILER__Third_Debug /Users/sunzhuofan/Desktop/C/Third/main.c || cmake_object_order_depends_target_Third
+  DEP_FILE = CMakeFiles/Third.dir/main.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/Third.dir
+  OBJECT_FILE_DIR = CMakeFiles/Third.dir
+
+build CMakeFiles/Third.dir/functions.c.o: C_COMPILER__Third_Debug /Users/sunzhuofan/Desktop/C/Third/functions.c || cmake_object_order_depends_target_Third
+  DEP_FILE = CMakeFiles/Third.dir/functions.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/Third.dir
+  OBJECT_FILE_DIR = CMakeFiles/Third.dir
+
+build CMakeFiles/Third.dir/指针.c.o: C_COMPILER__Third_Debug /Users/sunzhuofan/Desktop/C/Third/指针.c || cmake_object_order_depends_target_Third
+  DEP_FILE = CMakeFiles/Third.dir/指针.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/Third.dir
+  OBJECT_FILE_DIR = CMakeFiles/Third.dir
+
+build CMakeFiles/Third.dir/结构体.c.o: C_COMPILER__Third_Debug /Users/sunzhuofan/Desktop/C/Third/结构体.c || cmake_object_order_depends_target_Third
+  DEP_FILE = CMakeFiles/Third.dir/结构体.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/Third.dir
+  OBJECT_FILE_DIR = CMakeFiles/Third.dir
+
+build CMakeFiles/Third.dir/联合体和枚举.c.o: C_COMPILER__Third_Debug /Users/sunzhuofan/Desktop/C/Third/联合体和枚举.c || cmake_object_order_depends_target_Third
+  DEP_FILE = CMakeFiles/Third.dir/联合体和枚举.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/Third.dir
+  OBJECT_FILE_DIR = CMakeFiles/Third.dir
+
+build CMakeFiles/Third.dir/类型别名.c.o: C_COMPILER__Third_Debug /Users/sunzhuofan/Desktop/C/Third/类型别名.c || cmake_object_order_depends_target_Third
+  DEP_FILE = CMakeFiles/Third.dir/类型别名.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/Third.dir
+  OBJECT_FILE_DIR = CMakeFiles/Third.dir
+
+build CMakeFiles/Third.dir/文件预处理.c.o: C_COMPILER__Third_Debug /Users/sunzhuofan/Desktop/C/Third/文件预处理.c || cmake_object_order_depends_target_Third
+  DEP_FILE = CMakeFiles/Third.dir/文件预处理.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/Third.dir
+  OBJECT_FILE_DIR = CMakeFiles/Third.dir
+
+build CMakeFiles/Third.dir/test.c.o: C_COMPILER__Third_Debug /Users/sunzhuofan/Desktop/C/Third/test.c || cmake_object_order_depends_target_Third
+  DEP_FILE = CMakeFiles/Third.dir/test.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/Third.dir
+  OBJECT_FILE_DIR = CMakeFiles/Third.dir
+
+build CMakeFiles/Third.dir/宏.c.o: C_COMPILER__Third_Debug /Users/sunzhuofan/Desktop/C/Third/宏.c || cmake_object_order_depends_target_Third
+  DEP_FILE = CMakeFiles/Third.dir/宏.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/Third.dir
+  OBJECT_FILE_DIR = CMakeFiles/Third.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Third
+
+
+#############################################
+# Link the executable Third
+
+build Third: C_EXECUTABLE_LINKER__Third_Debug CMakeFiles/Third.dir/main.c.o CMakeFiles/Third.dir/functions.c.o CMakeFiles/Third.dir/指针.c.o CMakeFiles/Third.dir/结构体.c.o CMakeFiles/Third.dir/联合体和枚举.c.o CMakeFiles/Third.dir/类型别名.c.o CMakeFiles/Third.dir/文件预处理.c.o CMakeFiles/Third.dir/test.c.o CMakeFiles/Third.dir/宏.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/Third.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Third
+  TARGET_PDB = Third.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/sunzhuofan/Desktop/C/Third/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/sunzhuofan/Desktop/C/Third/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/sunzhuofan/Desktop/C/Third -B/Users/sunzhuofan/Desktop/C/Third/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/sunzhuofan/Desktop/C/Third/cmake-build-debug
+
+build all: phony Third
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

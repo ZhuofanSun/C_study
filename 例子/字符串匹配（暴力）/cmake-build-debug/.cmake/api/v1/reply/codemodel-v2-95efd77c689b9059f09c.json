@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "string_comparing",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "string_comparing::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-string_comparing-Debug-4b42f72aad34466d2108.json",
+					"name" : "string_comparing",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/sunzhuofan/Desktop/C/\u5b57\u7b26\u4e32\u5339\u914d\uff08\u66b4\u529b\uff09/cmake-build-debug",
+		"source" : "/Users/sunzhuofan/Desktop/C/\u5b57\u7b26\u4e32\u5339\u914d\uff08\u66b4\u529b\uff09"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

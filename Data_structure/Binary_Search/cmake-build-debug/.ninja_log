@@ -1,0 +1,5 @@
+# ninja log v5
+0	125	1672403368812425903	CMakeFiles/Binary_Search.dir/main.c.o	7748c33cab2e310
+125	202	1672403368887940659	Binary_Search	75ca12ff4daf54fe
+1	179	1672403739380852000	CMakeFiles/Binary_Search.dir/main.c.o	862f57f2082ecd8e
+179	314	1672403739515643165	Binary_Search	75ca12ff4daf54fe

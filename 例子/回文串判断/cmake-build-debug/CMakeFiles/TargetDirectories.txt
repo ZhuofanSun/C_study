@@ -1,0 +1,4 @@
+/Users/sunzhuofan/Desktop/C/回文串判断/cmake-build-debug/CMakeFiles/huiwenchuanpanduan.dir
+/Users/sunzhuofan/Desktop/C/回文串判断/cmake-build-debug/CMakeFiles/stringg.dir
+/Users/sunzhuofan/Desktop/C/回文串判断/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sunzhuofan/Desktop/C/回文串判断/cmake-build-debug/CMakeFiles/rebuild_cache.dir

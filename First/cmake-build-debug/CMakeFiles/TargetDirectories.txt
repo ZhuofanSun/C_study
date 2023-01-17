@@ -1,0 +1,3 @@
+/Users/sunzhuofan/Desktop/C/First/cmake-build-debug/CMakeFiles/001.dir
+/Users/sunzhuofan/Desktop/C/First/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sunzhuofan/Desktop/C/First/cmake-build-debug/CMakeFiles/rebuild_cache.dir
