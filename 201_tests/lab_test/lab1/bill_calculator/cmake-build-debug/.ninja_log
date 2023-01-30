@@ -1,0 +1,10 @@
+# ninja log v5
+1	82	1673575083808729759	build.ninja	e09f4f3ca07440fd
+1	140	1673575083961329433	CMakeFiles/bill_calculator.dir/bill_calculator.c.o	e1d3346fcb81a97d
+141	230	1673575084050716349	bill_calculator	c08bb606ff31b1c3
+0	157	1673575808681879418	CMakeFiles/bill_calculator.dir/bill_calculator.c.o	e1d3346fcb81a97d
+157	276	1673575808803677838	bill_calculator	c08bb606ff31b1c3
+1	156	1673576652109619421	CMakeFiles/bill_calculator.dir/bill_calculator.c.o	e1d3346fcb81a97d
+157	276	1673576652229477528	bill_calculator	c08bb606ff31b1c3
+1	138	1673578327564803338	CMakeFiles/bill_calculator.dir/bill_calculator.c.o	e1d3346fcb81a97d
+139	215	1673578327640962055	bill_calculator	c08bb606ff31b1c3

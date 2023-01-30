@@ -1,0 +1,201 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: ch5
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/sunzhuofan/Desktop/CMPUT$ 201/book_test/ch5/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target switch_statement
+
+
+#############################################
+# Order-only phony target for switch_statement
+
+build cmake_object_order_depends_target_switch_statement: phony || CMakeFiles/switch_statement.dir
+
+build CMakeFiles/switch_statement.dir/switch_statement.c.o: C_COMPILER__switch_statement_Debug /Users/sunzhuofan/Desktop/CMPUT$ 201/book_test/ch5/switch_statement.c || cmake_object_order_depends_target_switch_statement
+  DEP_FILE = CMakeFiles/switch_statement.dir/switch_statement.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/switch_statement.dir
+  OBJECT_FILE_DIR = CMakeFiles/switch_statement.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target switch_statement
+
+
+#############################################
+# Link the executable switch_statement
+
+build switch_statement: C_EXECUTABLE_LINKER__switch_statement_Debug CMakeFiles/switch_statement.dir/switch_statement.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/switch_statement.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = switch_statement
+  TARGET_PDB = switch_statement.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target if_else
+
+
+#############################################
+# Order-only phony target for if_else
+
+build cmake_object_order_depends_target_if_else: phony || CMakeFiles/if_else.dir
+
+build CMakeFiles/if_else.dir/if_else.c.o: C_COMPILER__if_else_Debug /Users/sunzhuofan/Desktop/CMPUT$ 201/book_test/ch5/if_else.c || cmake_object_order_depends_target_if_else
+  DEP_FILE = CMakeFiles/if_else.dir/if_else.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/if_else.dir
+  OBJECT_FILE_DIR = CMakeFiles/if_else.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target if_else
+
+
+#############################################
+# Link the executable if_else
+
+build if_else: C_EXECUTABLE_LINKER__if_else_Debug CMakeFiles/if_else.dir/if_else.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/if_else.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = if_else
+  TARGET_PDB = if_else.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target input_print_date
+
+
+#############################################
+# Order-only phony target for input_print_date
+
+build cmake_object_order_depends_target_input_print_date: phony || CMakeFiles/input_print_date.dir
+
+build CMakeFiles/input_print_date.dir/input_print_date.c.o: C_COMPILER__input_print_date_Debug /Users/sunzhuofan/Desktop/CMPUT$ 201/book_test/ch5/input_print_date.c || cmake_object_order_depends_target_input_print_date
+  DEP_FILE = CMakeFiles/input_print_date.dir/input_print_date.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/input_print_date.dir
+  OBJECT_FILE_DIR = CMakeFiles/input_print_date.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target input_print_date
+
+
+#############################################
+# Link the executable input_print_date
+
+build input_print_date: C_EXECUTABLE_LINKER__input_print_date_Debug CMakeFiles/input_print_date.dir/input_print_date.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/input_print_date.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = input_print_date
+  TARGET_PDB = input_print_date.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch5/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch5/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch5" -B"/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch5/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch5/cmake-build-debug
+
+build all: phony switch_statement if_else input_print_date
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

@@ -1,0 +1,3 @@
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_25/cmake-build-debug/CMakeFiles/class_1_25.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_25/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_25/cmake-build-debug/CMakeFiles/rebuild_cache.dir

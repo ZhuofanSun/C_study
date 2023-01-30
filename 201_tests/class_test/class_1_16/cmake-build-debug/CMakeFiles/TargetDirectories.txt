@@ -1,0 +1,7 @@
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_16/cmake-build-debug/CMakeFiles/class_1_16.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_16/cmake-build-debug/CMakeFiles/canopen.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_16/cmake-build-debug/CMakeFiles/file_modes.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_16/cmake-build-debug/CMakeFiles/read_file.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_16/cmake-build-debug/CMakeFiles/stream.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_16/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_16/cmake-build-debug/CMakeFiles/rebuild_cache.dir

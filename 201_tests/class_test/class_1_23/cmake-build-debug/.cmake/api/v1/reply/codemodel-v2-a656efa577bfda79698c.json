@@ -1,0 +1,132 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "class_1_23",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "array::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-array-Debug-db150d01445bbd4d2304.json",
+					"name" : "array",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bounds::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bounds-Debug-f43a76326d3655807a0c.json",
+					"name" : "bounds",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "class_1_23::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-class_1_23-Debug-32e454dc6c003cc80c62.json",
+					"name" : "class_1_23",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "deal_hand::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-deal_hand-Debug-cf8d485a8aed1457db0b.json",
+					"name" : "deal_hand",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "find_repeated::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-find_repeated-Debug-2c6c2b5aa2c0e7294277.json",
+					"name" : "find_repeated",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "read_char::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-read_char-Debug-e446eeb66ede801fb165.json",
+					"name" : "read_char",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "two-d-array::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-two-d-array-Debug-1d2b4ac3a5902d73301c.json",
+					"name" : "two-d-array",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "two-d-var-length::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-two-d-var-length-Debug-159a34bd406829a72cd9.json",
+					"name" : "two-d-var-length",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "var-length-array::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-var-length-array-Debug-499bf0de477543e275aa.json",
+					"name" : "var-length-array",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_23/cmake-build-debug",
+		"source" : "/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_23"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

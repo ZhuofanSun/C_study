@@ -1,0 +1,5 @@
+A sample README.
+
+Use for the interactive tar presentation.
+
+Compile hello.c into an executable called hello, and type ./hello to run it.

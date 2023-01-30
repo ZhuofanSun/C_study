@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "class_1_18",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "class_1_18::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-class_1_18-Debug-1451da998e160641cb59.json",
+					"name" : "class_1_18",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "commission::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-commission-Debug-733b8ee799e8fefb0487.json",
+					"name" : "commission",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "date::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-date-Debug-7769193e75ad0b203d36.json",
+					"name" : "date",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "short_circuit::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-short_circuit-Debug-9bdfeeb368efb821d2cf.json",
+					"name" : "short_circuit",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_18/cmake-build-debug",
+		"source" : "/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_18"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

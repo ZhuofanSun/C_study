@@ -1,0 +1,5 @@
+/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch5/cmake-build-debug/CMakeFiles/switch_statement.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch5/cmake-build-debug/CMakeFiles/if_else.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch5/cmake-build-debug/CMakeFiles/input_print_date.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch5/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,387 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: class_1_23
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/sunzhuofan/Desktop/CMPUT$ 201/class_test/class_1_23/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target class_1_23
+
+
+#############################################
+# Order-only phony target for class_1_23
+
+build cmake_object_order_depends_target_class_1_23: phony || CMakeFiles/class_1_23.dir
+
+build CMakeFiles/class_1_23.dir/main.c.o: C_COMPILER__class_1_23_Debug /Users/sunzhuofan/Desktop/CMPUT$ 201/class_test/class_1_23/main.c || cmake_object_order_depends_target_class_1_23
+  DEP_FILE = CMakeFiles/class_1_23.dir/main.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/class_1_23.dir
+  OBJECT_FILE_DIR = CMakeFiles/class_1_23.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target class_1_23
+
+
+#############################################
+# Link the executable class_1_23
+
+build class_1_23: C_EXECUTABLE_LINKER__class_1_23_Debug CMakeFiles/class_1_23.dir/main.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/class_1_23.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = class_1_23
+  TARGET_PDB = class_1_23.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target bounds
+
+
+#############################################
+# Order-only phony target for bounds
+
+build cmake_object_order_depends_target_bounds: phony || CMakeFiles/bounds.dir
+
+build CMakeFiles/bounds.dir/bounds.c.o: C_COMPILER__bounds_Debug /Users/sunzhuofan/Desktop/CMPUT$ 201/class_test/class_1_23/bounds.c || cmake_object_order_depends_target_bounds
+  DEP_FILE = CMakeFiles/bounds.dir/bounds.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/bounds.dir
+  OBJECT_FILE_DIR = CMakeFiles/bounds.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target bounds
+
+
+#############################################
+# Link the executable bounds
+
+build bounds: C_EXECUTABLE_LINKER__bounds_Debug CMakeFiles/bounds.dir/bounds.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/bounds.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bounds
+  TARGET_PDB = bounds.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target array
+
+
+#############################################
+# Order-only phony target for array
+
+build cmake_object_order_depends_target_array: phony || CMakeFiles/array.dir
+
+build CMakeFiles/array.dir/array.c.o: C_COMPILER__array_Debug /Users/sunzhuofan/Desktop/CMPUT$ 201/class_test/class_1_23/array.c || cmake_object_order_depends_target_array
+  DEP_FILE = CMakeFiles/array.dir/array.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/array.dir
+  OBJECT_FILE_DIR = CMakeFiles/array.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target array
+
+
+#############################################
+# Link the executable array
+
+build array: C_EXECUTABLE_LINKER__array_Debug CMakeFiles/array.dir/array.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/array.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = array
+  TARGET_PDB = array.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target deal_hand
+
+
+#############################################
+# Order-only phony target for deal_hand
+
+build cmake_object_order_depends_target_deal_hand: phony || CMakeFiles/deal_hand.dir
+
+build CMakeFiles/deal_hand.dir/deal_hand.c.o: C_COMPILER__deal_hand_Debug /Users/sunzhuofan/Desktop/CMPUT$ 201/class_test/class_1_23/deal_hand.c || cmake_object_order_depends_target_deal_hand
+  DEP_FILE = CMakeFiles/deal_hand.dir/deal_hand.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/deal_hand.dir
+  OBJECT_FILE_DIR = CMakeFiles/deal_hand.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target deal_hand
+
+
+#############################################
+# Link the executable deal_hand
+
+build deal_hand: C_EXECUTABLE_LINKER__deal_hand_Debug CMakeFiles/deal_hand.dir/deal_hand.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/deal_hand.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = deal_hand
+  TARGET_PDB = deal_hand.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target find_repeated
+
+
+#############################################
+# Order-only phony target for find_repeated
+
+build cmake_object_order_depends_target_find_repeated: phony || CMakeFiles/find_repeated.dir
+
+build CMakeFiles/find_repeated.dir/find_repeated.c.o: C_COMPILER__find_repeated_Debug /Users/sunzhuofan/Desktop/CMPUT$ 201/class_test/class_1_23/find_repeated.c || cmake_object_order_depends_target_find_repeated
+  DEP_FILE = CMakeFiles/find_repeated.dir/find_repeated.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/find_repeated.dir
+  OBJECT_FILE_DIR = CMakeFiles/find_repeated.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target find_repeated
+
+
+#############################################
+# Link the executable find_repeated
+
+build find_repeated: C_EXECUTABLE_LINKER__find_repeated_Debug CMakeFiles/find_repeated.dir/find_repeated.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/find_repeated.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = find_repeated
+  TARGET_PDB = find_repeated.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target read_char
+
+
+#############################################
+# Order-only phony target for read_char
+
+build cmake_object_order_depends_target_read_char: phony || CMakeFiles/read_char.dir
+
+build CMakeFiles/read_char.dir/read_char.c.o: C_COMPILER__read_char_Debug /Users/sunzhuofan/Desktop/CMPUT$ 201/class_test/class_1_23/read_char.c || cmake_object_order_depends_target_read_char
+  DEP_FILE = CMakeFiles/read_char.dir/read_char.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/read_char.dir
+  OBJECT_FILE_DIR = CMakeFiles/read_char.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target read_char
+
+
+#############################################
+# Link the executable read_char
+
+build read_char: C_EXECUTABLE_LINKER__read_char_Debug CMakeFiles/read_char.dir/read_char.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/read_char.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = read_char
+  TARGET_PDB = read_char.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target two-d-array
+
+
+#############################################
+# Order-only phony target for two-d-array
+
+build cmake_object_order_depends_target_two-d-array: phony || CMakeFiles/two-d-array.dir
+
+build CMakeFiles/two-d-array.dir/two-d-array.c.o: C_COMPILER__two-d-array_Debug /Users/sunzhuofan/Desktop/CMPUT$ 201/class_test/class_1_23/two-d-array.c || cmake_object_order_depends_target_two-d-array
+  DEP_FILE = CMakeFiles/two-d-array.dir/two-d-array.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/two-d-array.dir
+  OBJECT_FILE_DIR = CMakeFiles/two-d-array.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target two-d-array
+
+
+#############################################
+# Link the executable two-d-array
+
+build two-d-array: C_EXECUTABLE_LINKER__two-d-array_Debug CMakeFiles/two-d-array.dir/two-d-array.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/two-d-array.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = two-d-array
+  TARGET_PDB = two-d-array.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target two-d-var-length
+
+
+#############################################
+# Order-only phony target for two-d-var-length
+
+build cmake_object_order_depends_target_two-d-var-length: phony || CMakeFiles/two-d-var-length.dir
+
+build CMakeFiles/two-d-var-length.dir/two-d-var-length.c.o: C_COMPILER__two-d-var-length_Debug /Users/sunzhuofan/Desktop/CMPUT$ 201/class_test/class_1_23/two-d-var-length.c || cmake_object_order_depends_target_two-d-var-length
+  DEP_FILE = CMakeFiles/two-d-var-length.dir/two-d-var-length.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/two-d-var-length.dir
+  OBJECT_FILE_DIR = CMakeFiles/two-d-var-length.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target two-d-var-length
+
+
+#############################################
+# Link the executable two-d-var-length
+
+build two-d-var-length: C_EXECUTABLE_LINKER__two-d-var-length_Debug CMakeFiles/two-d-var-length.dir/two-d-var-length.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/two-d-var-length.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = two-d-var-length
+  TARGET_PDB = two-d-var-length.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target var-length-array
+
+
+#############################################
+# Order-only phony target for var-length-array
+
+build cmake_object_order_depends_target_var-length-array: phony || CMakeFiles/var-length-array.dir
+
+build CMakeFiles/var-length-array.dir/var-length-array.c.o: C_COMPILER__var-length-array_Debug /Users/sunzhuofan/Desktop/CMPUT$ 201/class_test/class_1_23/var-length-array.c || cmake_object_order_depends_target_var-length-array
+  DEP_FILE = CMakeFiles/var-length-array.dir/var-length-array.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -std=gnu99
+  OBJECT_DIR = CMakeFiles/var-length-array.dir
+  OBJECT_FILE_DIR = CMakeFiles/var-length-array.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target var-length-array
+
+
+#############################################
+# Link the executable var-length-array
+
+build var-length-array: C_EXECUTABLE_LINKER__var-length-array_Debug CMakeFiles/var-length-array.dir/var-length-array.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk
+  OBJECT_DIR = CMakeFiles/var-length-array.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = var-length-array
+  TARGET_PDB = var-length-array.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_23/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_23/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_23" -B"/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_23/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_23/cmake-build-debug
+
+build all: phony class_1_23 bounds array deal_hand find_repeated read_char two-d-array two-d-var-length var-length-array
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

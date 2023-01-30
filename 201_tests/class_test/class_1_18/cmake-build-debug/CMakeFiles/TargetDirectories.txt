@@ -1,0 +1,6 @@
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_18/cmake-build-debug/CMakeFiles/class_1_18.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_18/cmake-build-debug/CMakeFiles/short_circuit.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_18/cmake-build-debug/CMakeFiles/date.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_18/cmake-build-debug/CMakeFiles/commission.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_18/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/class_test/class_1_18/cmake-build-debug/CMakeFiles/rebuild_cache.dir

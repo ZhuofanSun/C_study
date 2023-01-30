@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ch5",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "if_else::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-if_else-Debug-ac743a8e477ac3ec8f28.json",
+					"name" : "if_else",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "input_print_date::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-input_print_date-Debug-a6efc71ab393087cac5b.json",
+					"name" : "input_print_date",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "switch_statement::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-switch_statement-Debug-e3c84915668bd6528c9b.json",
+					"name" : "switch_statement",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch5/cmake-build-debug",
+		"source" : "/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch5"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -1,0 +1,3 @@
+/Users/sunzhuofan/Desktop/CMPUT 201/lab_test/lab1/bill_calculator/cmake-build-debug/CMakeFiles/bill_calculator.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/lab_test/lab1/bill_calculator/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/lab_test/lab1/bill_calculator/cmake-build-debug/CMakeFiles/rebuild_cache.dir

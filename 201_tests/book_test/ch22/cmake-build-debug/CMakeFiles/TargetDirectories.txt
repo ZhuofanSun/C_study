@@ -1,0 +1,4 @@
+/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch22/cmake-build-debug/CMakeFiles/ch22.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch22/cmake-build-debug/CMakeFiles/test.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch22/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sunzhuofan/Desktop/CMPUT 201/book_test/ch22/cmake-build-debug/CMakeFiles/rebuild_cache.dir
