@@ -94,7 +94,7 @@ void print_array (int n, int m, char walk[n][m]){
 }
 
 int main() {
-    /*
+    
     // initialize the random number generator, seeding by current time,
     // so numbers will be different each time rand() is called
     srand(time(NULL));
@@ -109,16 +109,6 @@ int main() {
     char walk[row][column];  // initialize this 2-d array
     generate_random_walk(row, column, walk);  // everything to walk on this array
     print_array(row, column, walk);  // print out this array
-    */
-
-
-
-
-
-
-
-
-
-
+    
 
 }
