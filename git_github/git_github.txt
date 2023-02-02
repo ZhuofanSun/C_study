@@ -1,0 +1,66 @@
+恼人的操作捏～
+
+git config --global --list     查看全局配置
+git config --global user.name "名称"  配置名称
+git config --global user.email 邮箱 配置邮箱
+
+git init 在当前文件夹目录下初始化
+git clone [url] 在当前文件夹目录下克隆url的文件
+
+git status 获得当前文件夹的状态
+git add . 添加当前文件夹的文件到暂存区
+git commit -m 描述   提交到本地，-m是为了能描述更新 
+每次提交到本地后都会记录新的版本，指针（head）指向下一个
+git push 推到远程
+git reflog 查看git版本信息
+git log    查看详细版本信息
+git reset --hard 版本号（用reflog看）    穿越版本信息
+/Users/sunzhuofan/Desktop/.idea
+
+.gitignore 文件放置一些不需要提交的文件名称
+忽略文件中的空行或以#开始的行会被忽略
+通配符，*代表任意字符，？代表一个字符，[abc]代表可选字符范围{string1,string2}代表可选字符穿等
+名称最前面有！表示例外，不被忽略
+名称前是/表示/后面的文件全部忽略，除了名称
+名称后是/表示忽略/后所有文件
+
+
+分支
+git branch -v 查看分支
+git branch 分支名   创建分支
+git checkout 分支名   跳到新分支上    更改分支不会改变别的分支和master，互相独立
+合并分支要跳到合并到的分支上，
+git merge 想要合并的分支 （a合并到b，要先跳到b，然后用git merge a)
+如果要合并的两个文件都改变了，会冲突, 此时打开代码会发现帮你标出来了
+用vim手动合并，提交的时候不能用文件名
+git branch -d 分支命  删除分支
+
+远程
+
+git push [url] [分支名]   推送文件
+起名字： git remote -v 查看所有起的别名
+git remote add 别名【url】
+git pull 别名或者链接 master
+git reset
+git checkout   整个拉取操作是同步数据
+git clone 链接  克隆是把整个项目复制到本地目录
+
+
+
+
+分支
+
+
+
+测试可以用新的分支，在新的分支上修改对别的分支没有任何影响
+git branch 查看当前分支
+git branch 名字   创建新的分支
+git branch -d 名字   删除对应分支
+git switch 名字    /     git checkout 名字    切换分支
+
+token 密码: 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
+
+git remote add origin <ULR>
+git branch -M main
+git push -u origin main
+向远端上传新的仓库
