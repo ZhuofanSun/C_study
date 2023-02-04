@@ -1,4 +1,6 @@
 /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/cmake-build-debug/CMakeFiles/class_2_1.dir
 /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/cmake-build-debug/CMakeFiles/function-array.dir
+/Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/cmake-build-debug/CMakeFiles/find_repeated.dir
+/Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/cmake-build-debug/CMakeFiles/find_repeated_modularized.dir
 /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

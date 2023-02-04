@@ -8,7 +8,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: class_2_1
+# Project: class_2_3
 # Configurations: Debug
 # =============================================================================
 
@@ -36,137 +36,106 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/cmake-build-debug/
+cmake_ninja_workdir = /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_3/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target class_2_1
+# Object build statements for EXECUTABLE target class_2_3
 
 
 #############################################
-# Order-only phony target for class_2_1
+# Order-only phony target for class_2_3
 
-build cmake_object_order_depends_target_class_2_1: phony || CMakeFiles/class_2_1.dir
+build cmake_object_order_depends_target_class_2_3: phony || CMakeFiles/class_2_3.dir
 
-build CMakeFiles/class_2_1.dir/main.c.o: C_COMPILER__class_2_1_Debug /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/main.c || cmake_object_order_depends_target_class_2_1
-  DEP_FILE = CMakeFiles/class_2_1.dir/main.c.o.d
+build CMakeFiles/class_2_3.dir/main.c.o: C_COMPILER__class_2_3_Debug /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_3/main.c || cmake_object_order_depends_target_class_2_3
+  DEP_FILE = CMakeFiles/class_2_3.dir/main.c.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -std=gnu99
-  OBJECT_DIR = CMakeFiles/class_2_1.dir
-  OBJECT_FILE_DIR = CMakeFiles/class_2_1.dir
+  OBJECT_DIR = CMakeFiles/class_2_3.dir
+  OBJECT_FILE_DIR = CMakeFiles/class_2_3.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target class_2_1
+# Link build statements for EXECUTABLE target class_2_3
 
 
 #############################################
-# Link the executable class_2_1
+# Link the executable class_2_3
 
-build class_2_1: C_EXECUTABLE_LINKER__class_2_1_Debug CMakeFiles/class_2_1.dir/main.c.o
+build class_2_3: C_EXECUTABLE_LINKER__class_2_3_Debug CMakeFiles/class_2_3.dir/main.c.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
-  OBJECT_DIR = CMakeFiles/class_2_1.dir
+  OBJECT_DIR = CMakeFiles/class_2_3.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = class_2_1
-  TARGET_PDB = class_2_1.dbg
+  TARGET_FILE = class_2_3
+  TARGET_PDB = class_2_3.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target function-array
+# Object build statements for EXECUTABLE target static
 
 
 #############################################
-# Order-only phony target for function-array
+# Order-only phony target for static
 
-build cmake_object_order_depends_target_function-array: phony || CMakeFiles/function-array.dir
+build cmake_object_order_depends_target_static: phony || CMakeFiles/static.dir
 
-build CMakeFiles/function-array.dir/function-array.c.o: C_COMPILER__function-array_Debug /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/function-array.c || cmake_object_order_depends_target_function-array
-  DEP_FILE = CMakeFiles/function-array.dir/function-array.c.o.d
+build CMakeFiles/static.dir/static.c.o: C_COMPILER__static_Debug /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_3/static.c || cmake_object_order_depends_target_static
+  DEP_FILE = CMakeFiles/static.dir/static.c.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -std=gnu99
-  OBJECT_DIR = CMakeFiles/function-array.dir
-  OBJECT_FILE_DIR = CMakeFiles/function-array.dir
+  OBJECT_DIR = CMakeFiles/static.dir
+  OBJECT_FILE_DIR = CMakeFiles/static.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target function-array
+# Link build statements for EXECUTABLE target static
 
 
 #############################################
-# Link the executable function-array
+# Link the executable static
 
-build function-array: C_EXECUTABLE_LINKER__function-array_Debug CMakeFiles/function-array.dir/function-array.c.o
+build static: C_EXECUTABLE_LINKER__static_Debug CMakeFiles/static.dir/static.c.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
-  OBJECT_DIR = CMakeFiles/function-array.dir
+  OBJECT_DIR = CMakeFiles/static.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = function-array
-  TARGET_PDB = function-array.dbg
+  TARGET_FILE = static
+  TARGET_PDB = static.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target find_repeated
+# Object build statements for EXECUTABLE target stack
 
 
 #############################################
-# Order-only phony target for find_repeated
+# Order-only phony target for stack
 
-build cmake_object_order_depends_target_find_repeated: phony || CMakeFiles/find_repeated.dir
+build cmake_object_order_depends_target_stack: phony || CMakeFiles/stack.dir
 
-build CMakeFiles/find_repeated.dir/find_repeated.c.o: C_COMPILER__find_repeated_Debug /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/find_repeated.c || cmake_object_order_depends_target_find_repeated
-  DEP_FILE = CMakeFiles/find_repeated.dir/find_repeated.c.o.d
+build CMakeFiles/stack.dir/stack.c.o: C_COMPILER__stack_Debug /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_3/stack.c || cmake_object_order_depends_target_stack
+  DEP_FILE = CMakeFiles/stack.dir/stack.c.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -std=gnu99
-  OBJECT_DIR = CMakeFiles/find_repeated.dir
-  OBJECT_FILE_DIR = CMakeFiles/find_repeated.dir
+  OBJECT_DIR = CMakeFiles/stack.dir
+  OBJECT_FILE_DIR = CMakeFiles/stack.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target find_repeated
+# Link build statements for EXECUTABLE target stack
 
 
 #############################################
-# Link the executable find_repeated
+# Link the executable stack
 
-build find_repeated: C_EXECUTABLE_LINKER__find_repeated_Debug CMakeFiles/find_repeated.dir/find_repeated.c.o
+build stack: C_EXECUTABLE_LINKER__stack_Debug CMakeFiles/stack.dir/stack.c.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
-  OBJECT_DIR = CMakeFiles/find_repeated.dir
+  OBJECT_DIR = CMakeFiles/stack.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = find_repeated
-  TARGET_PDB = find_repeated.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target find_repeated_modularized
-
-
-#############################################
-# Order-only phony target for find_repeated_modularized
-
-build cmake_object_order_depends_target_find_repeated_modularized: phony || CMakeFiles/find_repeated_modularized.dir
-
-build CMakeFiles/find_repeated_modularized.dir/find_repeated_modularized.c.o: C_COMPILER__find_repeated_modularized_Debug /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/find_repeated_modularized.c || cmake_object_order_depends_target_find_repeated_modularized
-  DEP_FILE = CMakeFiles/find_repeated_modularized.dir/find_repeated_modularized.c.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -std=gnu99
-  OBJECT_DIR = CMakeFiles/find_repeated_modularized.dir
-  OBJECT_FILE_DIR = CMakeFiles/find_repeated_modularized.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target find_repeated_modularized
-
-
-#############################################
-# Link the executable find_repeated_modularized
-
-build find_repeated_modularized: C_EXECUTABLE_LINKER__find_repeated_modularized_Debug CMakeFiles/find_repeated_modularized.dir/find_repeated_modularized.c.o
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
-  OBJECT_DIR = CMakeFiles/find_repeated_modularized.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = find_repeated_modularized
-  TARGET_PDB = find_repeated_modularized.dbg
+  TARGET_FILE = stack
+  TARGET_PDB = stack.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_3/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -177,7 +146,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1 -B/Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/cmake-build-debug
+  COMMAND = cd /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_3/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_3 -B/Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_3/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -193,9 +162,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_1/cmake-build-debug
+# Folder: /Users/sunzhuofan/Desktop/C_study/201_tests/class_test/class_2_3/cmake-build-debug
 
-build all: phony class_2_1 function-array find_repeated find_repeated_modularized
+build all: phony class_2_3 static stack
 
 # =============================================================================
 # Built-in targets
