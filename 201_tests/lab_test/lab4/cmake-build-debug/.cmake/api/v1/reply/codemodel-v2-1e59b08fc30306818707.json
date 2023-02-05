@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "lab4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab4-Debug-733b4a2ef189123813a9.json",
-					"name" : "lab4",
+					"id" : "random_walk::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-random_walk-Debug-7c219874ee4ea6ef40ca.json",
+					"name" : "random_walk",
 					"projectIndex" : 0
 				}
 			]
