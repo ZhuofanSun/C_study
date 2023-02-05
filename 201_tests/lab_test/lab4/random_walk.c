@@ -33,19 +33,19 @@ _Bool random_walk (int n, int m, int * curr_row, int * curr_col, char  walk[n][m
 
     switch (direction) {
         case 0:  // left
-            walk[*curr_row][*curr_col-1] = walk[*curr_row][*curr_col] + 1;
+            walk[*curr_row][*curr_col-1] = (char) (walk[*curr_row][*curr_col] + 1);
             (*curr_col) --;
             return 1;
         case 1:  // up
-            walk[*curr_row-1][*curr_col] = walk[*curr_row][*curr_col] + 1;
+            walk[*curr_row-1][*curr_col] = (char) (walk[*curr_row][*curr_col] + 1);
             (*curr_row) --;
             return 1;
         case 2:  // right
-            walk[*curr_row][*curr_col+1] = walk[*curr_row][*curr_col] + 1;
+            walk[*curr_row][*curr_col+1] = (char) (walk[*curr_row][*curr_col] + 1);
             (*curr_col) ++;
             return 1;
         case 3:  // down
-            walk[*curr_row+1][*curr_col] = walk[*curr_row][*curr_col] + 1;
+            walk[*curr_row+1][*curr_col] = (char) (walk[*curr_row][*curr_col] + 1);
             (*curr_row) ++;
             return 1;
         default:  // direction should be [0,3]
@@ -68,6 +68,7 @@ void generate_random_walk (int n, int m, char walk[n][m]){
     char curr_letter = 'A';
     int  curr_row = 0,  curr_col = 0;
     walk[curr_row][curr_col] = curr_letter;  // start from left top corner, start from 'A'
+
     while(curr_letter != letter){  // loop end when reach target letter or blocked
 
         if(random_walk(n, m, &curr_row, &curr_col, walk)){  // return true if walk successfully
@@ -94,6 +95,7 @@ void print_array (int n, int m, char walk[n][m]){
 }
 
 int main() {
+
     // initialize the random number generator, seeding by current time,
     // so numbers will be different each time rand() is called
     srand(time(NULL));
