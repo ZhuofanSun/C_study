@@ -394,13 +394,20 @@ int main(){
 }
  **/
 
-
+/*
 int main(){
     //malloc 函数来动态申请内存空间
     //也就是用这个函数返回一个指向这块空间的地址，用指针接受
-    int * i = malloc(sizeof (int) * 1); //几个什么类型的空间
-    *i = 20;
-    printf("%d", *i);
+    char ** i = malloc(sizeof (char) * 30); //几个什么类型的空间
+    *i = "this is a test";
+    printf("%s\n", *i);
     free(i); //用完需要释放内存，并不会用储存空间
     i = NULL;//不用i指针了，指向空
+
+}
+*/
+int main(){
+
+    printf("");
+
 }
