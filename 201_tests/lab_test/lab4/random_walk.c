@@ -56,11 +56,12 @@ _Bool random_walk (int n, int m, int * curr_row, int * curr_col, char  walk[n][m
 }
 
 void generate_random_walk (int n, int m, char walk[n][m]){
-    char letter;
-    getchar();  // remove enter from previous, or the next scanf will get an enter char
-    printf("Walked until letter: ");
-    scanf("%c", &letter);
-    printf("\n");
+    char letter = 'Z';
+    //getchar();  // remove enter from previous, or the next scanf will get an enter char
+    //printf("Walked until letter: ");
+    //scanf("%c", &letter);
+
+    //printf("\n");
 
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) walk[i][j] = '.';  // all elements in the 2-d array is initially '.'
@@ -75,12 +76,14 @@ void generate_random_walk (int n, int m, char walk[n][m]){
             curr_letter = walk[curr_row][curr_col];
         }
         else{
+            printf("Walk until letter %c\n", curr_letter);  // indicate last letter.
             print_array(n, m, walk);
-            printf("Blocked at %c, didn't reach %c\n", curr_letter, letter);  // indicate last letter.
             exit(EXIT_FAILURE);
         }
 
     }
+    printf("Walk until letter %c\n", curr_letter);
+    print_array(n, m, walk);  // print out this array
 
 }
 
@@ -109,6 +112,5 @@ int main() {
 
     char walk[row][column];  // initialize this 2-d array
     generate_random_walk(row, column, walk);  // everything to walk on this array
-    print_array(row, column, walk);  // print out this array
 
 }
