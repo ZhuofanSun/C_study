@@ -408,6 +408,6 @@ int main(){
 */
 int main(){
 
-    printf("");
+    printf("%lu", sizeof (int));
 
 }
