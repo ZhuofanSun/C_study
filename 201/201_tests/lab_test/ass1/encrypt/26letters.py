@@ -32,15 +32,25 @@ for char in en_in_message:
         en_out_lst.append(chr(letters_random[letters.index(ord(char))]))
     else:
         en_out_lst.append("\n")
+
+lst = []
+i = 0
+while i != len(en_out_lst):
+    if en_out_lst[i] != '\n':
+        lst.append(en_out_lst[i])
+    else:
+        lst.reverse()
+        lst.append('\n')
+        output_encryption.write(''.join(lst))
+        lst = []
+    i += 1
+lst.reverse()
+output_encryption.write(''.join(lst))
 input_encryption.write(en_in_message)
-output_encryption.write(''.join(en_out_lst))
 
 mapping_file.close()
 input_encryption.close()
 output_encryption.close()
-
-
-
 
 
 
@@ -75,10 +85,20 @@ for char in de_in_message:
 input_decryption = open("input_decryption.txt", "w")
 output_decryption = open("output_decryption.txt", "w")
 
-input_decryption.write(''.join(de_out_lst))
+i = 0
+lst = []
+while i != len(de_out_lst):
+    if de_out_lst[i] != '\n':
+        lst.append(de_out_lst[i])
+    else:
+        lst.reverse()
+        lst.append('\n')
+        input_decryption.write(''.join(lst))
+        lst = []
+    i += 1
+lst.reverse()
+input_decryption.write(''.join(lst))
 output_decryption.write(de_in_message)
-
-
 
 """
 
@@ -91,4 +111,3 @@ make clean
 
 
 """
-

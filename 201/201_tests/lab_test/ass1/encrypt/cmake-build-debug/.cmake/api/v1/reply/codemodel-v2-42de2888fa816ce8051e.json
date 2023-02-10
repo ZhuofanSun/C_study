@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "encrypt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-encrypt-Debug-a3cce8cc4e1f70f9451c.json",
+					"jsonFile" : "target-encrypt-Debug-8f8e33e2d36c4e5fe4d7.json",
 					"name" : "encrypt",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Debug-1c20c5ec16f3f4562c89.json",
+					"jsonFile" : "target-test-Debug-fac54053744e7b256af1.json",
 					"name" : "test",
 					"projectIndex" : 0
 				}
@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/sunzhuofan/Desktop/CMPUT 201/lab_test/ass1/encrypt/cmake-build-debug",
-		"source" : "/Users/sunzhuofan/Desktop/CMPUT 201/lab_test/ass1/encrypt"
+		"build" : "/Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass1/encrypt/cmake-build-debug",
+		"source" : "/Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass1/encrypt"
 	},
 	"version" : 
 	{

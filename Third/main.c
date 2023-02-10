@@ -408,6 +408,12 @@ int main(){
 */
 int main(){
 
-    printf("%lu", sizeof (int));
+    int  i = 10;
+    int * j = &i;
+    int * k = &i;
+    printf("%d  %d  %d\n", i, *j, *k);
+    *j = 4;
+    printf("%d  %d  %d\n", i, *j, *k);
+    
 
 }
