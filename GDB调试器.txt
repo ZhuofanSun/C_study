@@ -1,0 +1,68 @@
+GDB 调试器：
+
+官网：http://www.sourceware.org/gdb/
+
+GDB可以做以下四件事情：
+	开始并且设置参数
+	打断点，在特殊情况下停止
+	当你程序停止，检查发生了什么
+
+GDB支持以下语言：
+·Ada·
+·Assembly·
+·C·
+·C++·
+·D·
+·Fortran·
+·Go·
+·Objective-C·
+·OpenCL·
+·Modula-2·
+·Pascal·
+·Rust·
+
+GDB 12.1  下载安装：
+
+·brew install gdb·
+
+gdb --version   查看版本号
+-> % which gdb
+/usr/local/bin/gdb
+
+创建系统证书：
+打开 钥匙串访问
+左上角进入: 钥匙串访问 - 证书助理 - 创建证书
+创建证书， 名称随意(Fan_gdb_1)，如 gdb_codesigned ，其中选择为 自签名根证书 ，代码签名 ，还有✅ 让我覆盖这些默认值
+后面一路点击下一步，不用做任何修改
+一直到这步骤，进行修改，选择 "系统 "，  --  指定用于该证书的位置，钥匙串：系统
+修改证书：
+双击 证书打开， 勾选使用 始终信任 ，然后关闭此此窗口，会自动保存修改
+执行 codesign -fs Fan_gdb_1 /usr/local/bin/gdb 命令，给证书授权；在执行 echo "set startup-with-shell off" >> ~/.gdbinit ， 关闭 MacOS 系统的 SIP 安全验证 ；设置完这咯爱那个步骤后， 要重启电脑 ，使得配置生效。
+
+需要gcc编译带flag：-g
+gcc -g test.c -o test
+
+sudo gdb [可执行文件]
+.....
+exit/ quit 都可以退出
+
+命令：
+r(run)  运行，会在断电停下
+n(next) 下一行
+b(break)  打断点，后面跟行数
+l(list)  查看程序
+i b(info b)  查看断点
+p(print)   后面接变量名，可以是表达式
+s(step)  进入别的函数  因为gdb并不会主动进入别的函数
+
+shell [shell命令] 在gdb里使用shell命令
+set looging on  日志功能，字一个文件里输出日志
+watch    观察点：后面加变量，变量变了会提示，可以放星号加地址
+info watchpoints 查看所有观察点
+
+
+
+
+
+
+

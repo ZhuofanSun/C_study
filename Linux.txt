@@ -247,3 +247,6 @@ x：excutable可执行，没权限进不去
 
 
 /Volumes/[C] Windows 10.hidden/Users/Public/Desktop
+
+后台执行： 在后面加& 会返回进程号
+
