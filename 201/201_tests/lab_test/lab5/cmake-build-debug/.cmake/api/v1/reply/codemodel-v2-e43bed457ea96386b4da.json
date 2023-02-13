@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/sunzhuofan/Desktop/C_study/201_tests/lab_test/lab5/cmake-build-debug",
-		"source" : "/Users/sunzhuofan/Desktop/C_study/201_tests/lab_test/lab5"
+		"build" : "/Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab5/cmake-build-debug",
+		"source" : "/Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab5"
 	},
 	"version" : 
 	{

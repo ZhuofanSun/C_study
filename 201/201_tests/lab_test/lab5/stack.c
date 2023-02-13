@@ -71,7 +71,7 @@ char get_top_paired(void){  // return the char paired with top one
 
 }
 
-void print_all(void){  // print the whole stack  // not used
+void print_all(void){  // print the whole stack    not used
 
     printf("bottom -->  ");
     for (int i = 0; i < top; ++i)
