@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "class_2_3",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "class_2_3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-class_2_3-Debug-f55dbbcf8d49f9f202df.json",
+					"name" : "class_2_3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stack::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stack-Debug-6b54b690de63c5a2fb72.json",
+					"name" : "stack",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "static::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-static-Debug-e291db1853d4cba5c89e.json",
+					"name" : "static",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/sunzhuofan/Desktop/C_study/201/201_tests/class_test/class_2_3/cmake-build-debug",
+		"source" : "/Users/sunzhuofan/Desktop/C_study/201/201_tests/class_test/class_2_3"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
