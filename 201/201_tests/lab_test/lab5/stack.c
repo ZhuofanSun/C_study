@@ -20,7 +20,7 @@ bool is_empty(void){  // check empty
 }
 
 bool is_full(void){
-    return top == STACK_SIZE;  // check full
+    return top >= STACK_SIZE;  // check full
 }
 
 void push(char i){
