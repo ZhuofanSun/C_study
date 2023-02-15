@@ -1,14 +1,9 @@
-/**
- * This is not a complete program
- * Taken from Ch 10, p220
- **/
-
 #include "stack.h"
-
-#define STACK_SIZE 10
+int STACK_SIZE = 0;
+typedef char ELEMENT_TYPE;
 
 /* external variables */
-char contents[STACK_SIZE];  // stack capacity 10
+ELEMENT_TYPE * contents;
 int top = 0;  // always pointing at the next index
 
 void make_empty(void){  // not used
@@ -23,13 +18,26 @@ bool is_full(void){
     return top >= STACK_SIZE;  // check full
 }
 
-void push(char i){
+
+void stack_overflow(ELEMENT_TYPE i){
+    STACK_SIZE += 10;
+    ELEMENT_TYPE * new_contents;
+    do {
+        new_contents = realloc(contents, STACK_SIZE * sizeof(ELEMENT_TYPE));
+    } while(new_contents == NULL);
+
+    contents = new_contents;
+    contents [top++] = i;
+
+}
+void push(ELEMENT_TYPE i){
 
     if (is_full()) {
 
-        // stack_overflow(); //not implemented yet
-        fprintf(stderr, "Stack overflow ");
-        exit(EXIT_FAILURE);
+        stack_overflow(i);
+
+        // fprintf(stderr, "Stack overflow ");
+        // exit(EXIT_FAILURE);
 
     }
     else
@@ -41,6 +49,7 @@ int pop(void){
     if (is_empty()){
 
         // stack_underflow();//not implemented yet
+
         fprintf(stderr, "Stack underflow \n");
         exit(EXIT_FAILURE);
 
@@ -49,7 +58,7 @@ int pop(void){
         return contents[--top];
 }
 
-char get_top(void){  // return top element
+ELEMENT_TYPE get_top(void){  // return top element
     if (!is_empty())
         return contents[top-1];  // top points at the next place
     else
@@ -77,5 +86,4 @@ void print_all(void){  // print the whole stack    not used
     for (int i = 0; i < top; ++i)
         printf("%c  ",  contents[i]);
     printf("<-- top\n");
-
 }
