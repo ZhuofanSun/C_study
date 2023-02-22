@@ -46,8 +46,8 @@ cmake_ninja_workdir = /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/l
 
 build cmake_object_order_depends_target_lab6: phony || CMakeFiles/lab6.dir
 
-build CMakeFiles/lab6.dir/main.c.o: C_COMPILER__lab6_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab6/main.c || cmake_object_order_depends_target_lab6
-  DEP_FILE = CMakeFiles/lab6.dir/main.c.o.d
+build CMakeFiles/lab6.dir/split_time.c.o: C_COMPILER__lab6_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab6/split_time.c || cmake_object_order_depends_target_lab6
+  DEP_FILE = CMakeFiles/lab6.dir/split_time.c.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
   OBJECT_DIR = CMakeFiles/lab6.dir
   OBJECT_FILE_DIR = CMakeFiles/lab6.dir
@@ -60,7 +60,7 @@ build CMakeFiles/lab6.dir/main.c.o: C_COMPILER__lab6_Debug /Users/sunzhuofan/Des
 #############################################
 # Link the executable lab6
 
-build lab6: C_EXECUTABLE_LINKER__lab6_Debug CMakeFiles/lab6.dir/main.c.o
+build lab6: C_EXECUTABLE_LINKER__lab6_Debug CMakeFiles/lab6.dir/split_time.c.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
   OBJECT_DIR = CMakeFiles/lab6.dir
   POST_BUILD = :
