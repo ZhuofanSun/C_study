@@ -52,6 +52,12 @@ build CMakeFiles/lab6.dir/split_time.c.o: C_COMPILER__lab6_Debug /Users/sunzhuof
   OBJECT_DIR = CMakeFiles/lab6.dir
   OBJECT_FILE_DIR = CMakeFiles/lab6.dir
 
+build CMakeFiles/lab6.dir/reverse_half.c.o: C_COMPILER__lab6_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab6/reverse_half.c || cmake_object_order_depends_target_lab6
+  DEP_FILE = CMakeFiles/lab6.dir/reverse_half.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles/lab6.dir
+  OBJECT_FILE_DIR = CMakeFiles/lab6.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target lab6
@@ -60,7 +66,7 @@ build CMakeFiles/lab6.dir/split_time.c.o: C_COMPILER__lab6_Debug /Users/sunzhuof
 #############################################
 # Link the executable lab6
 
-build lab6: C_EXECUTABLE_LINKER__lab6_Debug CMakeFiles/lab6.dir/split_time.c.o
+build lab6: C_EXECUTABLE_LINKER__lab6_Debug CMakeFiles/lab6.dir/split_time.c.o CMakeFiles/lab6.dir/reverse_half.c.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
   OBJECT_DIR = CMakeFiles/lab6.dir
   POST_BUILD = :
@@ -99,6 +105,37 @@ build average: C_EXECUTABLE_LINKER__average_Debug CMakeFiles/average.dir/average
   TARGET_FILE = average
   TARGET_PDB = average.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target reverse_half
+
+
+#############################################
+# Order-only phony target for reverse_half
+
+build cmake_object_order_depends_target_reverse_half: phony || CMakeFiles/reverse_half.dir
+
+build CMakeFiles/reverse_half.dir/reverse_half.c.o: C_COMPILER__reverse_half_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab6/reverse_half.c || cmake_object_order_depends_target_reverse_half
+  DEP_FILE = CMakeFiles/reverse_half.dir/reverse_half.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles/reverse_half.dir
+  OBJECT_FILE_DIR = CMakeFiles/reverse_half.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target reverse_half
+
+
+#############################################
+# Link the executable reverse_half
+
+build reverse_half: C_EXECUTABLE_LINKER__reverse_half_Debug CMakeFiles/reverse_half.dir/reverse_half.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/reverse_half.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = reverse_half
+  TARGET_PDB = reverse_half.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -133,7 +170,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab6/cmake-build-debug
 
-build all: phony lab6 average
+build all: phony lab6 average reverse_half
 
 # =============================================================================
 # Built-in targets

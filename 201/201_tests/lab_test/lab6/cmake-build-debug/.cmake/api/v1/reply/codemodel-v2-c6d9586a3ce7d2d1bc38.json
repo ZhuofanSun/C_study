@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,7 +33,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -48,8 +50,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "lab6::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab6-Debug-94424b6e3bbfaf4bada8.json",
+					"jsonFile" : "target-lab6-Debug-ef7fdee8bfa3816522af.json",
 					"name" : "lab6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "reverse_half::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-reverse_half-Debug-480d8049392b77bf1c8e.json",
+					"name" : "reverse_half",
 					"projectIndex" : 0
 				}
 			]

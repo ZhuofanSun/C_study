@@ -54,12 +54,12 @@ l(list)  查看程序
 i b(info b)  查看断点
 p(print)   后面接变量名，可以是表达式
 s(step)  进入别的函数  因为gdb并不会主动进入别的函数
-
+c(continue) 继续执行
 shell [shell命令] 在gdb里使用shell命令
 set looging on  日志功能，字一个文件里输出日志
 watch    观察点：后面加变量，变量变了会提示，可以放星号加地址
 info watchpoints 查看所有观察点
-
+d(delete)  删除断点，后面接编号
 
 
 
