@@ -52,6 +52,12 @@ build CMakeFiles/ass2_test.dir/find_substring.c.o: C_COMPILER__ass2_test_Debug /
   OBJECT_DIR = CMakeFiles/ass2_test.dir
   OBJECT_FILE_DIR = CMakeFiles/ass2_test.dir
 
+build CMakeFiles/ass2_test.dir/error_checking.c.o: C_COMPILER__ass2_test_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass2/ass2_test/error_checking.c || cmake_object_order_depends_target_ass2_test
+  DEP_FILE = CMakeFiles/ass2_test.dir/error_checking.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles/ass2_test.dir
+  OBJECT_FILE_DIR = CMakeFiles/ass2_test.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ass2_test
@@ -60,13 +66,106 @@ build CMakeFiles/ass2_test.dir/find_substring.c.o: C_COMPILER__ass2_test_Debug /
 #############################################
 # Link the executable ass2_test
 
-build ass2_test: C_EXECUTABLE_LINKER__ass2_test_Debug CMakeFiles/ass2_test.dir/find_substring.c.o
+build ass2_test: C_EXECUTABLE_LINKER__ass2_test_Debug CMakeFiles/ass2_test.dir/find_substring.c.o CMakeFiles/ass2_test.dir/error_checking.c.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
   OBJECT_DIR = CMakeFiles/ass2_test.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = ass2_test
   TARGET_PDB = ass2_test.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target puzzle2D
+
+
+#############################################
+# Order-only phony target for puzzle2D
+
+build cmake_object_order_depends_target_puzzle2D: phony || CMakeFiles/puzzle2D.dir
+
+build CMakeFiles/puzzle2D.dir/puzzle2D.c.o: C_COMPILER__puzzle2D_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass2/ass2_test/puzzle2D.c || cmake_object_order_depends_target_puzzle2D
+  DEP_FILE = CMakeFiles/puzzle2D.dir/puzzle2D.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles/puzzle2D.dir
+  OBJECT_FILE_DIR = CMakeFiles/puzzle2D.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target puzzle2D
+
+
+#############################################
+# Link the executable puzzle2D
+
+build puzzle2D: C_EXECUTABLE_LINKER__puzzle2D_Debug CMakeFiles/puzzle2D.dir/puzzle2D.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/puzzle2D.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = puzzle2D
+  TARGET_PDB = puzzle2D.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target wordSearch2D
+
+
+#############################################
+# Order-only phony target for wordSearch2D
+
+build cmake_object_order_depends_target_wordSearch2D: phony || CMakeFiles/wordSearch2D.dir
+
+build CMakeFiles/wordSearch2D.dir/wordSearch2D.c.o: C_COMPILER__wordSearch2D_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass2/ass2_test/wordSearch2D.c || cmake_object_order_depends_target_wordSearch2D
+  DEP_FILE = CMakeFiles/wordSearch2D.dir/wordSearch2D.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles/wordSearch2D.dir
+  OBJECT_FILE_DIR = CMakeFiles/wordSearch2D.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target wordSearch2D
+
+
+#############################################
+# Link the executable wordSearch2D
+
+build wordSearch2D: C_EXECUTABLE_LINKER__wordSearch2D_Debug CMakeFiles/wordSearch2D.dir/wordSearch2D.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/wordSearch2D.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = wordSearch2D
+  TARGET_PDB = wordSearch2D.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target error_checking
+
+
+#############################################
+# Order-only phony target for error_checking
+
+build cmake_object_order_depends_target_error_checking: phony || CMakeFiles/error_checking.dir
+
+build CMakeFiles/error_checking.dir/error_checking.c.o: C_COMPILER__error_checking_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass2/ass2_test/error_checking.c || cmake_object_order_depends_target_error_checking
+  DEP_FILE = CMakeFiles/error_checking.dir/error_checking.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles/error_checking.dir
+  OBJECT_FILE_DIR = CMakeFiles/error_checking.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target error_checking
+
+
+#############################################
+# Link the executable error_checking
+
+build error_checking: C_EXECUTABLE_LINKER__error_checking_Debug CMakeFiles/error_checking.dir/error_checking.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/error_checking.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = error_checking
+  TARGET_PDB = error_checking.dbg
 
 
 #############################################
@@ -102,7 +201,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass2/ass2_test/cmake-build-debug
 
-build all: phony ass2_test
+build all: phony ass2_test puzzle2D wordSearch2D error_checking
 
 # =============================================================================
 # Built-in targets

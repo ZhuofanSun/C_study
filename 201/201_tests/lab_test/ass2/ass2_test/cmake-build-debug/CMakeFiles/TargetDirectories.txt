@@ -1,3 +1,6 @@
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass2/ass2_test/cmake-build-debug/CMakeFiles/ass2_test.dir
+/Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass2/ass2_test/cmake-build-debug/CMakeFiles/puzzle2D.dir
+/Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass2/ass2_test/cmake-build-debug/CMakeFiles/wordSearch2D.dir
+/Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass2/ass2_test/cmake-build-debug/CMakeFiles/error_checking.dir
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass2/ass2_test/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass2/ass2_test/cmake-build-debug/CMakeFiles/rebuild_cache.dir

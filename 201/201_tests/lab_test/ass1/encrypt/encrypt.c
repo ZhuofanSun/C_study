@@ -1,4 +1,4 @@
-/*
+
 // -----------------------------------------------
 // Student name:        Zhuofan Sun
 // Student ID:          1740983
@@ -267,8 +267,9 @@ int main(int argc, char * argv[]) {
 
     return 0;
 }
-*/
 
+
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -310,7 +311,7 @@ void check_errors(char *mapping_file[], char *encrypt_mode[], char *input_file[]
         exit(7);
     }
 
-    /*the input file mappingfile is not found*/
+
     FILE *f1;
     f1 = fopen(*mapping_file, "r");
     if (f1==NULL){
@@ -318,7 +319,6 @@ void check_errors(char *mapping_file[], char *encrypt_mode[], char *input_file[]
         exit(3);
     }
 
-    /*the format of the input file mappingfile is incorrect*/
     int current_line = 1; //the line is reading
     char plaintext_letter, ciphertext_letter; //two different letters which are reading
 
@@ -352,21 +352,18 @@ void check_errors(char *mapping_file[], char *encrypt_mode[], char *input_file[]
     }
 
 
-    /*the input file inputfile is not found*/
     FILE *f2 = fopen(*input_file, "r");
     if (f2 == NULL) {
         fprintf(stderr, "Error: Mapping file %s does not exist\n", *input_file);
         exit(5);
     }
 
-    /*passes in an incorrect mode which other than 1 or 2)*/
     int mode = atoi(*encrypt_mode);
     if (mode != 1 && mode != 2) {
         fprintf(stderr, "You entered %s. Sorry, your mode must be 1 for encryption or 2 for decryption\n", *encrypt_mode);
         exit(6);
     }
 
-    /*For any other incorrect invocations of the program*/
 
     fclose(f1);
     fclose(f2);
@@ -473,3 +470,5 @@ int main(int argc, char * argv[]){
 
     // ./encrypt -t mapping_encryption.csv -m 1 -i input_encryption.txt
 }
+
+*/
