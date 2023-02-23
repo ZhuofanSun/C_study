@@ -35,14 +35,10 @@ void check_usage(int argc, char * argv[], char * params[]){
         else if ( strcmp(argv[i], "-o") == 0 ) {
             if(used[3]){
                 used[3] = 0;
-                if (i + 1 < argc) {
-                    solution_file = argv[i + 1];
-                } else {
-                    fprintf(stderr, "Usage: ./wordSearch2D -p <puzzle_file> -l <word_length> -w <wordlist_file> [-o <solution_file>]");
-                    exit(6);
+                solution_file = argv[i + 1];
                 }
             }
-        }
+
     }
 
     if (used[0] == 1 || used[1] == 1 || used[2] == 1){  // repeated usage or wrong flag will cause empty
@@ -57,6 +53,44 @@ void check_usage(int argc, char * argv[], char * params[]){
     params[3] = solution_file;
 }
 
+_Bool find_file(char * file_name){
+    FILE *file = fopen(file_name, "r");  // try to open the mapping file
+    if (file == NULL) {  // fail to find the file
+        return 0;
+    }
+    fclose(file);  // close the file only if success to open
+    return 1;
+}
+
+void check_puzzle(char * file_name){
+    if(!find_file(file_name)){
+        fprintf(stderr, "Error: Puzzle file %s does not exist\n", file_name);
+        exit(4);
+    }
+
+    
+}
+
+void check_word_len(char * len_str){
+
+
+}
+
+void check_wordlist(char * file_name){
+    if(!find_file(file_name)){
+        fprintf(stderr, "Error: Wordlist file %s does not exist\n", file_name);
+        exit(5);
+    }
+
+}
+
+void check_solution(char * file_name){
+
+}
+
+
+
+
 int main(){
     // Usage: ./wordSearch2D -p <puzzle_file> -l <word_length> -w <wordlist_file> [-o <solution_file>]
     // "wordSearch2D", "-p", "aaa", "-l", "bbb", "-w", "ccc", "-o", "ddd"
@@ -69,6 +103,13 @@ int main(){
             printf("\ntest null\n");
         printf("%s\n", pf_wl_wf_sf[i]);
     }
+
+    check_puzzle(pf_wl_wf_sf[0]);
+    check_wordlist(pf_wl_wf_sf[1]);
+    check_word_len(pf_wl_wf_sf[2]);
+    if (pf_wl_wf_sf[3] != NULL)
+        check_solution(pf_wl_wf_sf[3]);
+
 
 
 
