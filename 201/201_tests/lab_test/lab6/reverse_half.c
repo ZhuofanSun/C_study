@@ -13,7 +13,6 @@ int main() {
         len ++;
     int half_len = len / 2;
     int curr_index = half_len - 1;  // (message + half_len) is also pointing at the next chr
-
     for (; curr_index >= 0; curr_index--) {
         printf("%c", *(message+curr_index));
     }
