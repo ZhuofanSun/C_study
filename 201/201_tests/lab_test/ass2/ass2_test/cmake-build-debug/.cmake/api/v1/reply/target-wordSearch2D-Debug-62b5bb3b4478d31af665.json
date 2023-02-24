@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "ass2_test"
+			"path" : "wordSearch2D"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 11,
 				"parent" : 0
 			}
 		]
@@ -53,11 +53,12 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
-	"id" : "ass2_test::@6890427a1f51a3e7e1df",
+	"id" : "wordSearch2D::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -73,8 +74,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "ass2_test",
-	"nameOnDisk" : "ass2_test",
+	"name" : "wordSearch2D",
+	"nameOnDisk" : "wordSearch2D",
 	"paths" : 
 	{
 		"build" : ".",
@@ -87,13 +88,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
-			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
+				1,
 				2
 			]
 		}
@@ -103,7 +98,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "find_substring.c",
+			"path" : "wordSearch2D.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -114,8 +109,9 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "error_checking.h",
-			"sourceGroupIndex" : 1
+			"compileGroupIndex" : 0,
+			"path" : "puzzle2D.c",
+			"sourceGroupIndex" : 0
 		}
 	],
 	"type" : "EXECUTABLE"

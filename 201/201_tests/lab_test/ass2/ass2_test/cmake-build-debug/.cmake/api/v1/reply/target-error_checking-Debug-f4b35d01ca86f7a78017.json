@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "puzzle2D"
+			"path" : "error_checking"
 		}
 	],
 	"backtrace" : 1,
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "puzzle2D::@6890427a1f51a3e7e1df",
+	"id" : "error_checking::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -72,8 +72,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "puzzle2D",
-	"nameOnDisk" : "puzzle2D",
+	"name" : "error_checking",
+	"nameOnDisk" : "error_checking",
 	"paths" : 
 	{
 		"build" : ".",
@@ -94,7 +94,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "puzzle2D.c",
+			"path" : "error_checking.c",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -44,29 +44,29 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "ass2_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ass2_test-Debug-0ab788dbe7b5edb7a878.json",
-					"name" : "ass2_test",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
 					"id" : "error_checking::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-error_checking-Debug-52345a610ac097d307de.json",
+					"jsonFile" : "target-error_checking-Debug-f4b35d01ca86f7a78017.json",
 					"name" : "error_checking",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "find_substring::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-find_substring-Debug-cf7980f4e3b68d0cb40e.json",
+					"name" : "find_substring",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "puzzle2D::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-puzzle2D-Debug-3544aba107c6e4245fbf.json",
+					"jsonFile" : "target-puzzle2D-Debug-cb29c4448d8765176f74.json",
 					"name" : "puzzle2D",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "wordSearch2D::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-wordSearch2D-Debug-3dd830daca62fbdff207.json",
+					"jsonFile" : "target-wordSearch2D-Debug-62b5bb3b4478d31af665.json",
 					"name" : "wordSearch2D",
 					"projectIndex" : 0
 				}

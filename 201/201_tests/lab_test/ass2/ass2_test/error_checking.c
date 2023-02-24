@@ -168,7 +168,7 @@ void check_wordlist(char * file_name, int word_len){
 }
 
 
-int main(){
+int error_main(){
 
     // Usage: ./wordSearch2D -p <puzzle_file> -l <word_length> -w <wordlist_file> [-o <solution_file>]
     // "wordSearch2D", "-p", "aaa", "-l", "bbb", "-w", "ccc", "-o", "ddd"

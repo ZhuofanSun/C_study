@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "error_checking"
+			"path" : "puzzle2D"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 10,
+				"line" : 9,
 				"parent" : 0
 			}
 		]
@@ -52,11 +52,12 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
-	"id" : "error_checking::@6890427a1f51a3e7e1df",
+	"id" : "puzzle2D::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -72,8 +73,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "error_checking",
-	"nameOnDisk" : "error_checking",
+	"name" : "puzzle2D",
+	"nameOnDisk" : "puzzle2D",
 	"paths" : 
 	{
 		"build" : ".",
@@ -85,12 +86,19 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
 	"sources" : 
 	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "puzzle2D.c",
+			"sourceGroupIndex" : 0
+		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
