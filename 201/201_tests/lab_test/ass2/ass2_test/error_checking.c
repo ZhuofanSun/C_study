@@ -1,4 +1,11 @@
 #include "error_checking.h"
+#define MAX_N 100
+
+void encountered_error(){
+    fprintf(stderr, "Encountered error \n");
+    exit(7);
+}
+
 void check_usage(int argc, char * argv[], char * params[]){
 
     if (argc != 7 && argc != 9) {  // only accept 7 or 9 arguments
@@ -53,49 +60,121 @@ void check_usage(int argc, char * argv[], char * params[]){
     params[3] = solution_file;
 }
 
-_Bool find_file(char * file_name){
-    FILE *file = fopen(file_name, "r");  // try to open the mapping file
-    if (file == NULL) {  // fail to find the file
-        return 0;
-    }
-    fclose(file);  // close the file only if success to open
-    return 1;
-}
 
-void check_puzzle(char * file_name){
-    if(!find_file(file_name)){
+char** check_puzzle(char *file_name, int *n) {
+    FILE *puzzle_file = fopen(file_name, "r");  // try to open the mapping file
+    if (puzzle_file == NULL) {  // fail to find the file
         fprintf(stderr, "Error: Puzzle file %s does not exist\n", file_name);
         exit(4);
     }
 
-    
+
+    int row = 0, col = 0;
+    char **matrix;  // a string pointer
+
+    char row_str[MAX_N+2];  // full case: 100 char, '\n', '\0', last char must be NULL
+    while (fgets(row_str, MAX_N+2, puzzle_file) != NULL) {  // fgets return each line.
+
+        // use the first line to make string pointer and check size.
+        if (row_str[0] == '\n'){
+            continue;
+        }
+        if (row_str[MAX_N+1] != '\0')  // test 0<=n<=100
+            encountered_error();
+
+        int len = (int)strlen(row_str);  // strlen returns long
+        if (row_str[len - 1] == '\n') {  // remove 'enter'
+            row_str[len - 1] = '\0';
+            len--;  // this should be the matrix size
+        }
+
+        if (col == 0) {  // true in the 1st iteration, check col == row later
+            col = len;  // 1st iteration, assume row == col to make string pointer
+
+            // allocate a space for the `char*` pointer, elements should be the string in each row
+            do {matrix = (char**) malloc(sizeof(char*) * col);} while (matrix == NULL);
+
+            for (int i = 0; i < col; i++) {
+                // allocate a space for the string in each row
+                matrix[i] = (char*) malloc(sizeof(char) * col);
+            }
+        }
+        else if (len != col)  // error if while loop reaches col = row+1
+            encountered_error();
+
+        for (int i = 0; i < len; i++) {
+
+            if (row_str[i] < 32 || row_str[i] > 126)  // check each char in the string ASCII[32, 126]
+                encountered_error();
+
+            matrix[row][i] = row_str[i];
+        }
+        row++;
+    }
+
+    if (row == col)
+        *n = row;
+    else
+        encountered_error();
+
+    fclose(puzzle_file);
+    return matrix;
 }
 
-void check_word_len(char * len_str){
+int check_word_len(const char * len_str, int max_num){
+    int len = 0;
+    while (len_str[len] != '\0'){
+        if (len_str[len] < '0' || len_str[len] > '9')
+            encountered_error();
+        len ++;
+    }
+    int word_len =  atoi(len_str);
+    if (word_len < 1 || word_len > max_num)
+        encountered_error();
 
+    return word_len;
 
 }
 
-void check_wordlist(char * file_name){
-    if(!find_file(file_name)){
+void check_wordlist(char * file_name, int word_len){
+    FILE *word_file = fopen(file_name, "r");  // try to open the mapping file
+    if (word_file == NULL) {  // fail to find the file
         fprintf(stderr, "Error: Wordlist file %s does not exist\n", file_name);
         exit(5);
     }
 
+    char row_str[word_len+2];
+    while(fgets(row_str, word_len + 2, word_file) != NULL){  // 1 for \n 1 for \0
+        if (row_str[0] == '\n')
+            continue;
+        int len = (int)strlen(row_str);
+
+
+        if (row_str[len-1] == '\n') {  // remove 'enter'
+            row_str[len-1] = '\0';
+            len --;
+        }
+
+        if (len != word_len)  // minus the 'enter'
+            encountered_error();
+
+        for (int i = 0; i < word_len; ++i) {
+            if ((int)row_str[i] < 32 || (int) row_str[i] > 126)
+                encountered_error();
+        }
+
+    }
+    fclose(word_file);
 }
-
-void check_solution(char * file_name){
-
-}
-
-
 
 
 int main(){
+
     // Usage: ./wordSearch2D -p <puzzle_file> -l <word_length> -w <wordlist_file> [-o <solution_file>]
     // "wordSearch2D", "-p", "aaa", "-l", "bbb", "-w", "ccc", "-o", "ddd"
     int argc = 9;
-    char * argv[] = {"wordSearch2D", "-p", "aaa", "-l", "bbb", "-w", "ccc", "-o", "ddd"};
+    char * argv[] = {"wordSearch2D", "-p", "../../tests/sample_tests/student_1_table.txt",
+                     "-l", "4", "-w", "../../tests/sample_tests/student_1_wordlist.txt", "-o", "ddd"};
     char *pf_wl_wf_sf[4];
     check_usage(argc, argv, pf_wl_wf_sf);
     for (int i = 0; i < 4; ++i) {
@@ -104,11 +183,22 @@ int main(){
         printf("%s\n", pf_wl_wf_sf[i]);
     }
 
-    check_puzzle(pf_wl_wf_sf[0]);
-    check_wordlist(pf_wl_wf_sf[1]);
-    check_word_len(pf_wl_wf_sf[2]);
-    if (pf_wl_wf_sf[3] != NULL)
-        check_solution(pf_wl_wf_sf[3]);
+    int matrix_size = 0;
+    char **matrix = check_puzzle(pf_wl_wf_sf[0], &matrix_size);
+    int word_len = check_word_len(pf_wl_wf_sf[1], matrix_size);
+    check_wordlist(pf_wl_wf_sf[2], word_len);
+
+
+    for (int i = 0; i < matrix_size; ++i) {
+        for (int j = 0; j < matrix_size; ++j) {
+            printf("%c  ",matrix[i][j]);
+        }
+        printf("\n");
+    }
+    printf("word_len: %d\n", word_len);
+
+
+
 
 
 
