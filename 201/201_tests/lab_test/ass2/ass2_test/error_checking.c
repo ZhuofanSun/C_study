@@ -74,13 +74,12 @@ char** check_puzzle(char *file_name, int *n) {
 
     char row_str[MAX_N+2];  // full case: 100 char, '\n', '\0', last char must be NULL
     while (fgets(row_str, MAX_N+2, puzzle_file) != NULL) {  // fgets return each line.
-
-        // use the first line to make string pointer and check size.
         if (row_str[0] == '\n'){
-            continue;
+            break;
         }
-        if (row_str[MAX_N+1] != '\0')  // test 0<=n<=100
+        if (col != 0 && row == col)
             encountered_error();
+        // use the first line to make string pointer and check size.
 
         int len = (int)strlen(row_str);  // strlen returns long
         if (row_str[len - 1] == '\n') {  // remove 'enter'
@@ -112,8 +111,9 @@ char** check_puzzle(char *file_name, int *n) {
         row++;
     }
 
-    if (row == col)
-        *n = row;
+    if (row == col){ printf("wtf");
+                     *n = row;}
+
     else
         encountered_error();
 
@@ -136,17 +136,21 @@ int check_word_len(const char * len_str, int max_num){
 
 }
 
-void check_wordlist(char * file_name, int word_len){
+char** check_wordlist(char * file_name, int word_len, int * word_num){
     FILE *word_file = fopen(file_name, "r");  // try to open the mapping file
+    char **words = NULL;  // a string pointer
+
     if (word_file == NULL) {  // fail to find the file
         fprintf(stderr, "Error: Wordlist file %s does not exist\n", file_name);
         exit(5);
     }
 
     char row_str[word_len+2];
+    int row = 0;
+    char ** new_words;
     while(fgets(row_str, word_len + 2, word_file) != NULL){  // 1 for \n 1 for \0
         if (row_str[0] == '\n')
-            continue;
+            break;
         int len = (int)strlen(row_str);
 
 
@@ -157,16 +161,25 @@ void check_wordlist(char * file_name, int word_len){
 
         if (len != word_len)  // minus the 'enter'
             encountered_error();
+        if (row == 0)
+            do { words = (char **) malloc(sizeof(char *) * 1); } while (words == NULL);
+        else{
+            do {new_words = realloc(words, sizeof(char *) * (row+1));} while (new_words == NULL);
+            words = new_words;
+        }
+        do { words[row] = (char *) malloc(sizeof(char) * word_len); } while (words[row] == NULL);
 
         for (int i = 0; i < word_len; ++i) {
             if ((int)row_str[i] < 32 || (int) row_str[i] > 126)
                 encountered_error();
+            words[row][i] = row_str[i];
         }
-
+        row ++;
     }
     fclose(word_file);
+    *word_num = row;
+    return words;
 }
-
 
 int error_main(){
 
@@ -186,20 +199,26 @@ int error_main(){
     int matrix_size = 0;
     char **matrix = check_puzzle(pf_wl_wf_sf[0], &matrix_size);
     int word_len = check_word_len(pf_wl_wf_sf[1], matrix_size);
-    check_wordlist(pf_wl_wf_sf[2], word_len);
+    int word_num;
+    char **words = check_wordlist(pf_wl_wf_sf[2], word_len, &word_num);
+    printf("matrix_size:  %d\n", matrix_size);
 
-
-    for (int i = 0; i < matrix_size; ++i) {
-        for (int j = 0; j < matrix_size; ++j) {
+    printf("\nmatrix: \n");
+    for (int i = 0; i < 6; ++i) {
+        for (int j = 0; j < word_num; ++j) {
             printf("%c  ",matrix[i][j]);
         }
         printf("\n");
     }
+    printf("\nword_num: %d\n", word_num);
+    printf("words: \n");
+    for (int i = 0; i < 6; ++i) {
+        for (int j = 0; j < word_len; ++j) {
+            printf("%c  ",words[i][j]);
+        }
+        printf("\n");
+    }
     printf("word_len: %d\n", word_len);
-
-
-
-
 
 
 
