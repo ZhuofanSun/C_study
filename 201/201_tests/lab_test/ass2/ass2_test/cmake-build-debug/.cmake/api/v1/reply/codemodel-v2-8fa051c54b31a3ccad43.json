@@ -18,7 +18,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -36,7 +37,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -54,6 +56,13 @@
 					"id" : "find_substring::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-find_substring-Debug-cf7980f4e3b68d0cb40e.json",
 					"name" : "find_substring",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_matrix::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_matrix-Debug-43775b506e213081d53d.json",
+					"name" : "generate_matrix",
 					"projectIndex" : 0
 				},
 				{

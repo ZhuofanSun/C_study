@@ -1,6 +1,5 @@
-star;(0,4);3
-real;(3,4);6
-jest;(4,1);1
-seen;(2,0);5
-rice;(3,4);2
-tims;(4,4);6
+python;(7,2);1
+nodeJS;(7,7);4
+hammin;(7,5);4
+typede;(7,4);4
+roosts;(2,0);3

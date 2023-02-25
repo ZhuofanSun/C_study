@@ -79,14 +79,14 @@ void output(const char * sf_name, int x, int y, const int direction, const int d
 
 
 
-int main(int argc, char* argv[]){
+int main(){
+    // ./wordSearch2D -p ./tests/local/puzzle.txt -l 2 -w ./tests/local/wordlist.txt -o ./tests/local/output.txt
     // time ./wordSearch2D -p ../tests/sample_tests/student_1_table.txt -l 4 -w ../tests/sample_tests/student_1_wordlist.txt
-    //
-    //
-    //
-    //int argc = 7;
-    //char * argv[] = {"wordSearch2D", "-p", "../../tests/sample_tests/student_1_table.txt",
-                    // "-l", "4", "-w", "../../tests/sample_tests/student_1_wordlist.txt"};
+    // time ./wordSearch2D -p ../tests/sample_tests/student_2_table.txt -l 6 -w ../tests/sample_tests/student_2_wordlist.txt
+    // time ./wordSearch2D -w ../tests/sample_tests/student_2_wordlist.txt -p ../tests/sample_tests/student_2_table.txt -l 6 -o mysolution.com.png
+    int argc = 7;
+    char * argv[] = {"wordSearch2D", "-p", "../../tests/sample_tests/student_1_table.txt", "-l", "4", "-w", "../../tests/sample_tests/student_1_wordlist.txt"};
+    // char * argv[] = {"wordSearch2D", "-p", "../../tests/sample_tests/student_2_table.txt", "-l", "6", "-w", "../../tests/sample_tests/student_2_wordlist.txt"};
     char *pf_wl_wf_sf[4], **matrix;
     int matrix_size = 0, word_len, word_num;
 

@@ -179,6 +179,37 @@ build wordSearch2D: C_EXECUTABLE_LINKER__wordSearch2D_Debug CMakeFiles/wordSearc
   TARGET_FILE = wordSearch2D
   TARGET_PDB = wordSearch2D.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target generate_matrix
+
+
+#############################################
+# Order-only phony target for generate_matrix
+
+build cmake_object_order_depends_target_generate_matrix: phony || CMakeFiles/generate_matrix.dir
+
+build CMakeFiles/generate_matrix.dir/generate_matrix.c.o: C_COMPILER__generate_matrix_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass2/ass2_test/generate_matrix.c || cmake_object_order_depends_target_generate_matrix
+  DEP_FILE = CMakeFiles/generate_matrix.dir/generate_matrix.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles/generate_matrix.dir
+  OBJECT_FILE_DIR = CMakeFiles/generate_matrix.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target generate_matrix
+
+
+#############################################
+# Link the executable generate_matrix
+
+build generate_matrix: C_EXECUTABLE_LINKER__generate_matrix_Debug CMakeFiles/generate_matrix.dir/generate_matrix.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/generate_matrix.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = generate_matrix
+  TARGET_PDB = generate_matrix.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -213,7 +244,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/ass2/ass2_test/cmake-build-debug
 
-build all: phony find_substring error_checking puzzle2D wordSearch2D
+build all: phony find_substring error_checking puzzle2D wordSearch2D generate_matrix
 
 # =============================================================================
 # Built-in targets
