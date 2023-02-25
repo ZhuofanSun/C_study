@@ -56,7 +56,7 @@ int find_str(char *long_str, char *short_str){
     int substr_num = long_len - short_len + 1;  //长字符串中最多有这么多可能的短字符串
     int sub_letter_index;
     int add_letter_index;
-    // printf("substr_num: %d\n", substr_num);
+
 
     if (long_hash == short_hash) {
         if (compare_str(short_str, long_str, short_len, 0))
@@ -64,17 +64,11 @@ int find_str(char *long_str, char *short_str){
     }
 
     for (int curr_str_index = 1; curr_str_index < substr_num; ++curr_str_index) {
-        // printf("\n");
+
         sub_letter_index = curr_str_index - 1;
         add_letter_index = sub_letter_index + short_len;
-        // printf("curr_str_index: %d  char: %c\n", curr_str_index, long_str[curr_str_index]);
-        // printf("sub_letter_index: %d  char: %c\n", sub_letter_index, long_str[sub_letter_index]);
-        // printf("add_letter_index: %d  char:%c\n", add_letter_index, long_str[add_letter_index]);
-        // printf("long_hash: %d\n", long_hash);
-        // printf("short_hash: %d\n", short_hash);
         long_hash = (D * (long_hash - long_str[sub_letter_index] * h) + long_str[add_letter_index]) % P;
-        // printf("long_hash_after: %d\n", long_hash);
-        // printf("short_hash_after: %d\n", short_hash);
+
         if (long_hash < 0)
             long_hash = P + long_hash;  // 他妈的明明是加上去非得说减去
         if (long_hash == short_hash) {
@@ -88,9 +82,10 @@ int find_str(char *long_str, char *short_str){
 }
 
 int find_dir_string(char **matrix, int x, int y, int direction, char *short_str) {
+
     int col = (int)strlen(matrix[0]);
     int row = col;
-    int i = 0, j = 0, index = 0;
+    int i, j, index = 0;
     char long_str[row+1];
     switch (direction) {
         case 1:  // right
@@ -115,21 +110,21 @@ int find_dir_string(char **matrix, int x, int y, int direction, char *short_str)
             break;
         case 5:  // bottom right
             for (i = x, j = y; i < col && j < row; i++, j++) {
-                long_str[index++] = matrix[i][j];
+                long_str[index++] = matrix[j][i];
             }
             break;
         case 6:  // top left
             for (i = x, j = y; i >= 0 && j >= 0; i--, j--) {
-                long_str[index++] = matrix[i][j];
+                long_str[index++] = matrix[j][i];
             }
             break;
         case 7:  // up right
-            for (i = x, j = y; i >= 0 && j < row; i--, j++) {
+            for (i = y, j = x; i >= 0 && j < row; i--, j++) {
                 long_str[index++] = matrix[i][j];
             }
             break;
         case 8:  // bottom left
-            for (i = x, j = y; i < col && j >= 0; i++, j--) {
+            for (i = y, j = x; i < col && j >= 0; i++, j--) {
                 long_str[index++] = matrix[i][j];
             }
             break;
@@ -137,18 +132,74 @@ int find_dir_string(char **matrix, int x, int y, int direction, char *short_str)
             return -1;
     }
     long_str[index] = '\0';
-    printf("long_str: %s\n", long_str);
-    printf("short_str: %s\n", short_str);
+    printf("find-dir-str(): long_str: %s\n", long_str);
+
     return find_str(long_str, short_str);
 }
 
-char * find(.....){  // 多次调用find_dir_strin，像下面main一样
-    .......
+int find(char** matrix, int* x, int* y, char* short_str, int * direction, int matrix_size){  // 多次调用find_dir_strin，像下面main一样
+    int result;
+    printf("\n");
+    printf("direction: %d\n", *direction);
+    for (; *x < matrix_size; ++(*x)) {  // 00 - n0
+        printf("\n");
+        *direction = 1;
+        for (; *direction < 9; ++ *direction) {
+            if ((result = find_dir_string(matrix, *x, *y, *direction, short_str)) != -1)
+                break;
+        }
+        if (result != -1) break;
+    }
+    if (result != -1)
+        return result;
+    printf("\n");
+    (*x) --;
+    for (; *y < matrix_size; ++ *y) {  // n0 - nn
+        printf("\n");
+        *direction = 1;
+        for (; *direction < 9; ++ *direction) {
+            if ((result = find_dir_string(matrix, *x, *y, *direction, short_str)) != -1){
+                break;
+            }
+
+        }
+        if (result != -1) break;
+    }
+
+    if (result != -1)
+        return result;
+    (*y) --;
+    printf("\n");
+    for (; *x >= 0; -- *x) {  // nn - 0n
+        printf("\n");
+        *direction = 1;
+        for (; *direction < 9; ++ *direction) {
+            if ((result = find_dir_string(matrix, *x, *y, *direction, short_str)) != -1)
+                break;
+
+        }
+        if (result != -1) break;
+    }
+
+    if (result != -1)
+        return result;
+    (*x) ++;
+    for (; *y >= 0; -- *y) {  // 0n -- 00
+        printf("\n");
+        *direction = 1;
+        for (; *direction < 9; ++ *direction) {
+            if ((result = find_dir_string(matrix, *x, *y, *direction, short_str)) != -1)
+                break;
+        }
+        if (result != -1) break;
+    }
+    return result;
+    (*y) ++;
 }
 
 
 
-int main(){
+int puzzle_main(){
     error_main();
 
     int argc = 9;
@@ -176,47 +227,11 @@ int main(){
     }
     printf("word_len: %d\n", word_len);
      int x = 0, y = 0, direction = 1, result;
-     char *short_str = "mit";
-    for (; x < matrix_size; ++x) {  // 00 - n0
-        for (; direction < 9; ++direction) {
-            if ((result = find_dir_string(matrix, x, y, direction, short_str)) != -1){
-                printf("result: %d\n", result); break;
-            }
-        }
-    }
+     char *short_str = "abc";
 
-    for (; y < matrix_size; ++y) {  // n0 - nn
-        for (; direction < 9; ++direction) {
-            if ((result = find_dir_string(matrix, x, y, direction, short_str)) != -1){
-                printf("result: %d\n", result); break;
-            }
-        }
-    }
+     result = find(matrix, &x, &y, short_str, &direction, matrix_size);
+    printf("\n\nresult: %d", result);
 
-    for (; x >= 0; --x) {  // nn - 0n
-        for (; direction < 9; ++direction) {
-            if ((result = find_dir_string(matrix, x, y, direction, short_str)) != -1){
-                printf("result: %d\n", result); break;
-            }
-        }
-    }
-
-    for (; y >= 0; --y) {  // 0n -- 00
-        for (; direction < 9; ++direction) {
-            if ((result = find_dir_string(matrix, x, y, direction, short_str)) != -1){
-                printf("result: %d\n", result); break;
-            }
-        }
-    }
-
-
-
-
-     if ((result = find_dir_string(matrix, x, y, direction, short_str)) != -1)
-         printf("result: %d\n", result);
-
-    result = find_dir_string(matrix, x, y, direction, short_str);
-    printf("result: %d\n", result);
-
+    return 0;
 
 }

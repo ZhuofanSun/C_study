@@ -111,8 +111,8 @@ char** check_puzzle(char *file_name, int *n) {
         row++;
     }
 
-    if (row == col){ printf("wtf");
-                     *n = row;}
+    if (row == col)
+        *n = row;
 
     else
         encountered_error();
@@ -181,6 +181,20 @@ char** check_wordlist(char * file_name, int word_len, int * word_num){
     return words;
 }
 
+void check_sol (const char *filename) {
+    const char *file_name = ((filename != NULL) ? filename : "output.txt");
+    FILE *sol_file = fopen(file_name, "w");
+
+    if (sol_file == NULL)
+        encountered_error();
+    else
+        fclose(sol_file);
+
+}
+
+
+
+
 int error_main(){
 
     // Usage: ./wordSearch2D -p <puzzle_file> -l <word_length> -w <wordlist_file> [-o <solution_file>]
@@ -221,5 +235,5 @@ int error_main(){
     printf("word_len: %d\n", word_len);
 
 
-
+    return 0;
 }
