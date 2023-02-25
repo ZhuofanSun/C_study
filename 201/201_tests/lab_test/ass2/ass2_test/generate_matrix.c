@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define N 7
-#define M 7
+#define N 10
+#define M 10
 #define MIN 32
 #define MAX 126
 
@@ -29,20 +29,20 @@ int main() {
     }
 
     // Pick 6 random 5-char strings from the matrix
-    char strings[6][6];
+    char strings[20][21];
     int k, l, x, y, p;
-    for (p = 0; p < 6; p++) {
+    for (p = 0; p < 20; p++) {
         x = rand() % N;
         y = rand() % M;
-        for (k = 0, l = y; k < 5 && l < M; k++, l++) {
+        for (k = 0, l = y; k < 20 && l < M; k++, l++) {
             strings[p][k] = matrix[x][l];
         }
     }
 
     // Print the picked strings
     printf("\nThe 6 random 5-char strings are:\n");
-    for (p = 0; p < 6; p++) {
-        for (k = 0; k < 5; k++) {
+    for (p = 0; p < 20; p++) {
+        for (k = 0; k < 20; k++) {
             printf("%c", strings[p][k]);
         }
         printf("\n");
