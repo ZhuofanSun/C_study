@@ -165,6 +165,7 @@ Host lab
 这个host让  zhuofan3@ug13.cs.ualberta.ca  变成了 lab
 
 公钥public key在本地：./Users/sunzhuofan/.ssh
+乌班图地址：/home/parallels/.ssh
 生成公钥：在.ssh目录： ssh-keygen -t rsa   -t是加密，rsa是加密格式
 
 ssh-keygen -t ed25519 -f ~/.ssh/ualberta_cs_labs -N

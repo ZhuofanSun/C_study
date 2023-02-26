@@ -57,8 +57,8 @@ void check_usage(int argc, char * argv[], char * pf_wl_wf_sf[]){
             if(used[3]){
                 used[3] = 0;
                 solution_file = argv[i + 1];
+                }
             }
-        }
 
     }
 
@@ -193,8 +193,8 @@ char** check_wordlist(char * file_name, int word_len, int * word_num){
         }
         // allocate the space for string in each row in 'words'
         do { words[row] = (char *) malloc(sizeof(char) * (word_len+1)); } while (words[row] == NULL);
-
-        int i = 0;
+        
+	int i = 0;
         for (; i < word_len; ++i) {  // check ascii, and add strings
             if ((int)row_str[i] < 32 || (int) row_str[i] > 126)
                 encountered_error();
