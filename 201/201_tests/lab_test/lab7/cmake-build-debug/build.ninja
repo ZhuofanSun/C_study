@@ -99,6 +99,37 @@ build get_extension: C_EXECUTABLE_LINKER__get_extension_Debug CMakeFiles/get_ext
   TARGET_FILE = get_extension
   TARGET_PDB = get_extension.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target sum-2d-array
+
+
+#############################################
+# Order-only phony target for sum-2d-array
+
+build cmake_object_order_depends_target_sum-2d-array: phony || CMakeFiles/sum-2d-array.dir
+
+build CMakeFiles/sum-2d-array.dir/sum-2d-array.c.o: C_COMPILER__sum-2d-array_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab7/sum-2d-array.c || cmake_object_order_depends_target_sum-2d-array
+  DEP_FILE = CMakeFiles/sum-2d-array.dir/sum-2d-array.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles/sum-2d-array.dir
+  OBJECT_FILE_DIR = CMakeFiles/sum-2d-array.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sum-2d-array
+
+
+#############################################
+# Link the executable sum-2d-array
+
+build sum-2d-array: C_EXECUTABLE_LINKER__sum-2d-array_Debug CMakeFiles/sum-2d-array.dir/sum-2d-array.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/sum-2d-array.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sum-2d-array
+  TARGET_PDB = sum-2d-array.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -133,7 +164,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab7/cmake-build-debug
 
-build all: phony lab7 get_extension
+build all: phony lab7 get_extension sum-2d-array
 
 # =============================================================================
 # Built-in targets

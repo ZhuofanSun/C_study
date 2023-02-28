@@ -1,4 +1,5 @@
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab7/cmake-build-debug/CMakeFiles/lab7.dir
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab7/cmake-build-debug/CMakeFiles/get_extension.dir
+/Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab7/cmake-build-debug/CMakeFiles/sum-2d-array.dir
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab7/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab7/cmake-build-debug/CMakeFiles/rebuild_cache.dir

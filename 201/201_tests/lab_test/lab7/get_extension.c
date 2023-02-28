@@ -14,7 +14,7 @@ int main(int argc, char* argv[]){
 int get_extension(const char *file_name) {
     static const char* extensions[] = {".txt", ".out", ".bkp", ".dot", ".tx"};
     int name_len = strlen(file_name), extension_len;
-    char * substring;  // pointer of the expected extension
+    const char * substring;  // pointer of the expected extension
 
     for (int i = 0; i < 5; i++) {
         extension_len = strlen(extensions[i]);
