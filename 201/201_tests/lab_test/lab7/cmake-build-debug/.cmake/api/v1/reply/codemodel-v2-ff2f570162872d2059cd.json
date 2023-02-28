@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,12 +31,20 @@
 					"name" : "lab7",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "get_extension::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-get_extension-Debug-d13748e75b3d30bb7032.json",
+					"name" : "get_extension",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "lab7::@6890427a1f51a3e7e1df",

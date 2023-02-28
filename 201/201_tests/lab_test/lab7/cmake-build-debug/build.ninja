@@ -68,6 +68,37 @@ build lab7: C_EXECUTABLE_LINKER__lab7_Debug CMakeFiles/lab7.dir/palindrome.c.o
   TARGET_FILE = lab7
   TARGET_PDB = lab7.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target get_extension
+
+
+#############################################
+# Order-only phony target for get_extension
+
+build cmake_object_order_depends_target_get_extension: phony || CMakeFiles/get_extension.dir
+
+build CMakeFiles/get_extension.dir/get_extension.c.o: C_COMPILER__get_extension_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab7/get_extension.c || cmake_object_order_depends_target_get_extension
+  DEP_FILE = CMakeFiles/get_extension.dir/get_extension.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles/get_extension.dir
+  OBJECT_FILE_DIR = CMakeFiles/get_extension.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target get_extension
+
+
+#############################################
+# Link the executable get_extension
+
+build get_extension: C_EXECUTABLE_LINKER__get_extension_Debug CMakeFiles/get_extension.dir/get_extension.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/get_extension.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = get_extension
+  TARGET_PDB = get_extension.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -102,7 +133,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab7/cmake-build-debug
 
-build all: phony lab7
+build all: phony lab7 get_extension
 
 # =============================================================================
 # Built-in targets
