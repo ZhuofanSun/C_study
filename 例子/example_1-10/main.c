@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
+#include <ctype.h>
 
 void ex_1(){
     //题目：有 1、2、3、4 四个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？
@@ -94,7 +94,72 @@ void ex_2(){
     printf("bonus = %lf", bonus);
 }
 
+
+_Bool check_number(char * str1, char *str2){
+    int len1 = (int)strlen(str1), len2 = (int) strlen(str2);
+    for (int index1 = 0; index1 < len1; ++index1) {
+        if (!isdigit(str1[index1])){
+            return 0;
+        }
+    }
+    for (int index2 = 0; index2 < len2; ++index2) {
+        if (!isdigit(str2[index2])){
+            return 0;
+        }
+    }
+
+    int num1 = (int)atoi(str1), num2 = (int)atoi(str2);
+    if (num1 > num2){
+        return 0;
+    }
+
+    return 1;
+}
+
+_Bool check_alpha(char * str1, char *str2){
+    // 全大写返回-1， 全小写返回-2，错误返回0。
+    int len1 = (int)strlen(str1), len2 = (int) strlen(str2);
+    if (len1 !=1 || len2 != 1){
+        return 0;
+    }
+
+    int flag1 = 0, flag2 = 0;
+    if (isupper(*str1)){
+        flag1 = -1;
+    }
+    else if (islower(*str1)){
+        flag1 = -2;
+    }
+    else{
+        return 0;
+    }
+
+    if (isupper(*str2)){
+        flag2 = -1;
+    }
+    else if (islower(*str2)){
+        flag2 = -2;
+    }
+    else{
+        return 0;
+    }
+
+    if (flag1 != flag2){
+        return 0;
+    }
+    if (*str1 > *str2){
+        return 0;
+    }
+
+    return 1;
+}
+
+
 void println(){
+    // 随表刷B站看到的，加了一些检查
+    // 要求输入 "X-X" X替换成数字或者字母，打印从第一个字符到第二个字符之间所有的
+    // 比如输入 0-5 就打印 0 1 2 3 4 5， a-d 就打印 a b c d
+
     char str1[100], str2[100];
     int i = 0;
     char letter;
@@ -103,11 +168,11 @@ void println(){
         str1[i++] = letter;
 
     }
+    str1[i] = '\0';
     if (letter == '\n') {
-        printf("%s", str1);
+        fprintf(stderr, "shit!!!\n%s", str1);
         exit(1);
     }
-    str1[i] = '\0';
     i = 0;
     while ((letter = (char)fgetc(stdin)) != '\n'){
 
@@ -116,7 +181,23 @@ void println(){
     }
     str2[i] = '\0';
     printf("str1: %s\nstr2: %s\n", str1, str2);
-
+    if (check_number(str1, str2)){
+        for (int j = atoi(str1); j <= atoi(str2); ++j) {
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
+    else if (check_alpha(str1, str2)){
+        for (int j = (int)*str1; j <= (int)*str2; ++j) {
+            printf("%c ", j);
+        }
+        printf("\n");
+    }
+    else {
+        fprintf(stderr,"shit!!\n");
+        fprintf(stderr,"%s-%s\n", str1, str2);
+        exit(EXIT_FAILURE);
+    }
 
 }
 
