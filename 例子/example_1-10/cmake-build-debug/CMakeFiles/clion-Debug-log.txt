@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -DCMAKE_C_COMPILER=/usr/local/Cellar/gcc/12.2.0/bin/gcc-12 -DCMAKE_CXX_COMPILER=/usr/local/Cellar/gcc/12.2.0/bin/g++-12 -G Ninja -S /Users/sunzhuofan/Desktop/C/例子/example_1-10 -B /Users/sunzhuofan/Desktop/C/例子/example_1-10/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -DCMAKE_C_COMPILER=/usr/local/Cellar/gcc/12.2.0/bin/gcc-12 -DCMAKE_CXX_COMPILER=/usr/local/Cellar/gcc/12.2.0/bin/g++-12 -G Ninja -S /Users/sunzhuofan/Desktop/C_study/例子/example_1-10 -B /Users/sunzhuofan/Desktop/C_study/例子/example_1-10/cmake-build-debug
 -- The C compiler identification is GNU 12.2.0
 -- Checking whether C compiler has -isysroot
 -- Checking whether C compiler has -isysroot - yes
@@ -17,4 +17,4 @@ CMake Warning:
     CMAKE_CXX_COMPILER
 
 
--- Build files have been written to: /Users/sunzhuofan/Desktop/C/例子/example_1-10/cmake-build-debug
+-- Build files have been written to: /Users/sunzhuofan/Desktop/C_study/例子/example_1-10/cmake-build-debug

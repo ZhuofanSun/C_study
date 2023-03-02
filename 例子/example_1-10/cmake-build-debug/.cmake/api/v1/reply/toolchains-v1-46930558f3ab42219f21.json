@@ -12,19 +12,19 @@
 					[
 						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12/include",
 						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12/include-fixed",
-						"/Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk/usr/include",
-						"/Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk/System/Library/Frameworks"
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks"
 					],
 					"linkDirectories" : 
 					[
 						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12",
 						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc",
 						"/usr/local/Cellar/gcc/12.2.0/lib/gcc/current",
-						"/Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk/usr/lib"
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib"
 					],
 					"linkFrameworkDirectories" : 
 					[
-						"/Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk/System/Library/Frameworks"
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks"
 					],
 					"linkLibraries" : 
 					[

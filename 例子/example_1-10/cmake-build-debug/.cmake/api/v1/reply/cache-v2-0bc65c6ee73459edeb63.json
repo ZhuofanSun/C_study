@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/sunzhuofan/Desktop/C/\u4f8b\u5b50/example_1-10/cmake-build-debug"
+			"value" : "/Users/sunzhuofan/Desktop/C_study/\u4f8b\u5b50/example_1-10/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "23"
+			"value" : "24"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -92,6 +92,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "2"
+		},
+		{
+			"name" : "CMAKE_COLOR_DIAGNOSTICS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Enable colored diagnostics throughout."
+				}
+			],
+			"type" : "BOOL",
+			"value" : "ON"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -406,6 +418,18 @@
 			"value" : ""
 		},
 		{
+			"name" : "CMAKE_FIND_PACKAGE_REDIRECTS_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake."
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/sunzhuofan/Desktop/C_study/\u4f8b\u5b50/example_1-10/cmake-build-debug/CMakeFiles/pkgRedirects"
+		},
+		{
 			"name" : "CMAKE_GENERATOR",
 			"properties" : 
 			[
@@ -463,7 +487,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/sunzhuofan/Desktop/C/\u4f8b\u5b50/example_1-10"
+			"value" : "/Users/sunzhuofan/Desktop/C_study/\u4f8b\u5b50/example_1-10"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -695,7 +719,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -787,7 +811,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23"
+			"value" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1035,7 +1059,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/sunzhuofan/Desktop/C/\u4f8b\u5b50/example_1-10/cmake-build-debug"
+			"value" : "/Users/sunzhuofan/Desktop/C_study/\u4f8b\u5b50/example_1-10/cmake-build-debug"
 		},
 		{
 			"name" : "example_1_10_IS_TOP_LEVEL",
@@ -1059,7 +1083,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/sunzhuofan/Desktop/C/\u4f8b\u5b50/example_1-10"
+			"value" : "/Users/sunzhuofan/Desktop/C_study/\u4f8b\u5b50/example_1-10"
 		}
 	],
 	"kind" : "cache",

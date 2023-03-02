@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <string.h>
+#include <stdlib.h>
 
 
 void ex_1(){
@@ -93,10 +94,36 @@ void ex_2(){
     printf("bonus = %lf", bonus);
 }
 
+void println(){
+    char str1[100], str2[100];
+    int i = 0;
+    char letter;
+    while ((letter = (char)fgetc(stdin)) != '-' && letter != '\n') {
 
+        str1[i++] = letter;
+
+    }
+    if (letter == '\n') {
+        printf("%s", str1);
+        exit(1);
+    }
+    str1[i] = '\0';
+    i = 0;
+    while ((letter = (char)fgetc(stdin)) != '\n'){
+
+        str2[i++] = letter;
+
+    }
+    str2[i] = '\0';
+    printf("str1: %s\nstr2: %s\n", str1, str2);
+
+
+}
 
 int main() {
     //ex_1();
     //ex_2();
+    println();
+
     return 0;
 }

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/sunzhuofan/Desktop/C/例子/example_1-10
+# Install script for directory: /Users/sunzhuofan/Desktop/C_study/例子/example_1-10
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/sunzhuofan/Desktop/C/例子/example_1-10/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/sunzhuofan/Desktop/C_study/例子/example_1-10/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
