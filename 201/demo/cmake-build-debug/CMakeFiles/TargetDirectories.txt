@@ -1,5 +1,5 @@
-/Users/sunzhuofan/Desktop/C_study/CMPUT_201_资料/demo/cmake-build-debug/CMakeFiles/demo.dir
-/Users/sunzhuofan/Desktop/C_study/CMPUT_201_资料/demo/cmake-build-debug/CMakeFiles/celsius_scanf.dir
-/Users/sunzhuofan/Desktop/C_study/CMPUT_201_资料/demo/cmake-build-debug/CMakeFiles/binary_op.dir
-/Users/sunzhuofan/Desktop/C_study/CMPUT_201_资料/demo/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/sunzhuofan/Desktop/C_study/CMPUT_201_资料/demo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/sunzhuofan/Desktop/C_study/201/demo/cmake-build-debug/CMakeFiles/demo.dir
+/Users/sunzhuofan/Desktop/C_study/201/demo/cmake-build-debug/CMakeFiles/celsius_scanf.dir
+/Users/sunzhuofan/Desktop/C_study/201/demo/cmake-build-debug/CMakeFiles/binary_op.dir
+/Users/sunzhuofan/Desktop/C_study/201/demo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sunzhuofan/Desktop/C_study/201/demo/cmake-build-debug/CMakeFiles/rebuild_cache.dir

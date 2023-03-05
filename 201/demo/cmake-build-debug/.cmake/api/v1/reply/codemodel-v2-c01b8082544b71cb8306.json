@@ -43,21 +43,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "binary_op::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-binary_op-Debug-1a23c321b36f460eedc4.json",
+					"jsonFile" : "target-binary_op-Debug-d5353ac85037e1645014.json",
 					"name" : "binary_op",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "celsius_scanf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-celsius_scanf-Debug-f41b08f00cf8ae1ac5d1.json",
+					"jsonFile" : "target-celsius_scanf-Debug-ad0765e293b726181a8a.json",
 					"name" : "celsius_scanf",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "demo::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-demo-Debug-60293b6d2b7cded98ce7.json",
+					"jsonFile" : "target-demo-Debug-4e69a730cc186ee4e829.json",
 					"name" : "demo",
 					"projectIndex" : 0
 				}
@@ -67,8 +67,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/sunzhuofan/Desktop/C_study/CMPUT_201_\u8d44\u6599/demo/cmake-build-debug",
-		"source" : "/Users/sunzhuofan/Desktop/C_study/CMPUT_201_\u8d44\u6599/demo"
+		"build" : "/Users/sunzhuofan/Desktop/C_study/201/demo/cmake-build-debug",
+		"source" : "/Users/sunzhuofan/Desktop/C_study/201/demo"
 	},
 	"version" : 
 	{

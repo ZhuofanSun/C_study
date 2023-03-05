@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <string.h>
+#include <stdlib.h>
 //【辗转相除法-原理-哔哩哔哩】 https://b23.tv/cSy0HYX
 
 int greatest_common_divisor(int num, int denom){
@@ -24,9 +25,13 @@ int greatest_common_divisor(int num, int denom){
         return greatest_common_divisor(denom, num%denom);
 
 }
-
-int main(void) {
-
+#define MAX_LEN 20
+#undef MAX_LEN
+#ifndef MAX_LEN
+#error MAX_LEN is not defined
+#endif
+int main(int argc, char **argv) {
+/*
     int num1, denom1, num2, denom2, result_num, result_denom;
 
     printf("Enter first fraction: ");
@@ -50,5 +55,13 @@ int main(void) {
     printf("最大公约数是：%d", gcd);
     ////////////////////////试图加入化简//////////////////////////////////
     printf("\n%u", -1);
+    return 0;
+}
+*/
+
+    for (int i = 0; i < MAX_LEN; i++) {
+        printf("%d\n", i);
+    }
+
     return 0;
 }
