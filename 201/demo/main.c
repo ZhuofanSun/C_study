@@ -25,11 +25,58 @@ int greatest_common_divisor(int num, int denom){
         return greatest_common_divisor(denom, num%denom);
 
 }
-#define MAX_LEN 20
-#undef MAX_LEN
-#ifndef MAX_LEN
-#error MAX_LEN is not defined
-#endif
+
+
+void arr_exchange(int arr[], int i, int j){
+    if (i != j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+}
+
+int partition(int arr[], int p, int r){
+
+    int pivot = arr[r];
+    int i = p - 1;
+    int count_equal = 0;
+    for (int j = p; j < r; ++j) {
+        if (arr[j] < pivot){  // 小于pivot正常推进
+            arr_exchange(arr, ++i, j);  // exchange index i with index j
+        }
+        else if (arr[j] == pivot){
+            count_equal ++;
+        }
+    }
+    if (count_equal == r - p){
+        return (r + p) / 2;
+    }
+    arr_exchange(arr, ++i, r);
+    return i;
+}
+
+
+
+void quicksort(int arr[], int p, int r){
+    if (p < r) {
+
+        int q = partition(arr, p, r);
+        quicksort(arr, p, q-1);
+        quicksort(arr, q+1, r);
+    }
+
+}
+
+int get_size(const int arr[], int capacity){
+    int size = 0;
+    for (; size < capacity; size++) {
+        if (arr[size]==0){
+            break;
+        }
+    }
+    return size;
+}
+
 int main(int argc, char **argv) {
 /*
     int num1, denom1, num2, denom2, result_num, result_denom;
@@ -59,9 +106,14 @@ int main(int argc, char **argv) {
 }
 */
 
-    for (int i = 0; i < MAX_LEN; i++) {
-        printf("%d\n", i);
-    }
+    int arr[20] = {9,4,6,1,3,2,8, 5, 7};
+    int capacity = sizeof (arr) / sizeof (arr[0]);
+    int size = get_size(arr, capacity);
 
-    return 0;
+    quicksort(arr, 0, size - 1);
+
+    for (int i = 0; i < size; ++i) {
+        printf("%d  ", arr[i]);
+    }
+    printf("\n");
 }
