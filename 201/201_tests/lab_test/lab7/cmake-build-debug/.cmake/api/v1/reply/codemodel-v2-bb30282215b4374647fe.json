@@ -17,7 +17,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -34,12 +35,20 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "delete::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-delete-Debug-0974ae4f5bd6d399ec01.json",
+					"name" : "delete",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "get_extension::@6890427a1f51a3e7e1df",

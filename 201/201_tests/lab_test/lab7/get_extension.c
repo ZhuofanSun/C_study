@@ -3,21 +3,22 @@
 #define MAX_SIZE 20
 
 int get_extension(const char *file_name);
-int main(int argc, char* argv[]){
+int main(int argc,char* argv[]){
 
 	//simplifying things and not doing any argument validation
     printf("The index value of the extension of the input file is: %d\n", get_extension(argv[1]));
+    return 0;
 }
 
 
 
 int get_extension(const char *file_name) {
     static const char* extensions[] = {".txt", ".out", ".bkp", ".dot", ".tx"};
-    int name_len = strlen(file_name), extension_len;
+    int name_len = (int)strlen(file_name), extension_len;
     const char * substring;  // pointer of the expected extension
 
     for (int i = 0; i < 5; i++) {
-        extension_len = strlen(extensions[i]);
+        extension_len = (int)strlen(extensions[i]);
         if (name_len < extension_len){
             continue;
         }

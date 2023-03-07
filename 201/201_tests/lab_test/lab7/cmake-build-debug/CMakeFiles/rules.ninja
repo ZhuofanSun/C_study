@@ -69,6 +69,25 @@ rule C_EXECUTABLE_LINKER__sum-2d-array_Debug
 
 
 #############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__delete_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/local/Cellar/gcc/12.2.0/bin/gcc-12 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__delete_Debug
+  command = $PRE_LINK && /usr/local/Cellar/gcc/12.2.0/bin/gcc-12 $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
 # Rule for running custom commands.
 
 rule CUSTOM_COMMAND

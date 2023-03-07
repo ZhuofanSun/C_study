@@ -130,6 +130,37 @@ build sum-2d-array: C_EXECUTABLE_LINKER__sum-2d-array_Debug CMakeFiles/sum-2d-ar
   TARGET_FILE = sum-2d-array
   TARGET_PDB = sum-2d-array.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target delete
+
+
+#############################################
+# Order-only phony target for delete
+
+build cmake_object_order_depends_target_delete: phony || CMakeFiles/delete.dir
+
+build CMakeFiles/delete.dir/delete.c.o: C_COMPILER__delete_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab7/delete.c || cmake_object_order_depends_target_delete
+  DEP_FILE = CMakeFiles/delete.dir/delete.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles/delete.dir
+  OBJECT_FILE_DIR = CMakeFiles/delete.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target delete
+
+
+#############################################
+# Link the executable delete
+
+build delete: C_EXECUTABLE_LINKER__delete_Debug CMakeFiles/delete.dir/delete.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/delete.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = delete
+  TARGET_PDB = delete.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -164,7 +195,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab7/cmake-build-debug
 
-build all: phony lab7 get_extension sum-2d-array
+build all: phony lab7 get_extension sum-2d-array delete
 
 # =============================================================================
 # Built-in targets
