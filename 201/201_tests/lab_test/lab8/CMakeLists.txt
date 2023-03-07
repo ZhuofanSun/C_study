@@ -6,3 +6,4 @@ set(CMAKE_C_STANDARD 99)
 add_executable(lab8 language_greeting.c)
 
 add_executable(qsort quicksort.c qsort.c)
+add_executable(gcd gcd.c)

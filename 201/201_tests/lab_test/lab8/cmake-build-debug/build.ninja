@@ -105,6 +105,37 @@ build qsort: C_EXECUTABLE_LINKER__qsort_Debug CMakeFiles/qsort.dir/quicksort.c.o
   TARGET_FILE = qsort
   TARGET_PDB = qsort.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target gcd
+
+
+#############################################
+# Order-only phony target for gcd
+
+build cmake_object_order_depends_target_gcd: phony || CMakeFiles/gcd.dir
+
+build CMakeFiles/gcd.dir/gcd.c.o: C_COMPILER__gcd_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab8/gcd.c || cmake_object_order_depends_target_gcd
+  DEP_FILE = CMakeFiles/gcd.dir/gcd.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles/gcd.dir
+  OBJECT_FILE_DIR = CMakeFiles/gcd.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target gcd
+
+
+#############################################
+# Link the executable gcd
+
+build gcd: C_EXECUTABLE_LINKER__gcd_Debug CMakeFiles/gcd.dir/gcd.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/gcd.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = gcd
+  TARGET_PDB = gcd.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -139,7 +170,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab8/cmake-build-debug
 
-build all: phony lab8 qsort
+build all: phony lab8 qsort gcd
 
 # =============================================================================
 # Built-in targets

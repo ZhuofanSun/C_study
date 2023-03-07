@@ -38,16 +38,18 @@ int check_palindrome(char * msg){
 */
 
 int check_palindrome(char * msg){
-
-    char reverse_msg[strlen(msg)];  // all lower-case alphabet msg char in reverse order
+    int len = strlen(msg);
+    char reverse_msg[len];  // all lower-case alphabet msg char in reverse order
     int i = 0, j = 0;
     for (int k = (int)strlen(msg) - 1; k >= 0 ; --k) {  // start from the last element
 
         if (*(msg+k) >= 'a' && *(msg+k) <= 'z'){  // [a,z]
-            reverse_msg[j++] = *(msg+k);
+            *(reverse_msg+j) = *(msg+k);
+            j ++;
         }
         else if (*(msg+k) >= 'A' && *(msg+k) <= 'Z'){  // [A,Z] -- convert into lower case
-            reverse_msg[j++] = *(msg+k) - 'A' + 'a';
+            *(reverse_msg+j) = *(msg+k) - 'A' + 'a';
+            j ++;
         }
 
     }
@@ -55,14 +57,14 @@ int check_palindrome(char * msg){
     j = 0;
     for (; i < strlen(msg); ++i) {  // compare and return
 
-        if (*(msg+j) >= 'a' && *(msg+j) <= 'z'){
-            if(*(msg+j) != *(reverse_msg+j)){
+        if (*(msg+i) >= 'a' && *(msg+i) <= 'z'){
+            if(*(msg+i) != *(reverse_msg+j)){
                 return 0;
             }
             j ++;
         }
-        else if (*(msg+j) >= 'A' && *(msg+j) <= 'Z'){  // convert into lower case
-            if(*(msg+j) - 'A' + 'a' != *(reverse_msg+j)){
+        else if (*(msg+i) >= 'A' && *(msg+i) <= 'Z'){  // convert into lower case
+            if(*(msg+i) - 'A' + 'a' != *(reverse_msg+j)){
                 return 0;
             }
             j ++;

@@ -1,4 +1,5 @@
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab8/cmake-build-debug/CMakeFiles/lab8.dir
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab8/cmake-build-debug/CMakeFiles/qsort.dir
+/Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab8/cmake-build-debug/CMakeFiles/gcd.dir
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab8/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab8/cmake-build-debug/CMakeFiles/rebuild_cache.dir
