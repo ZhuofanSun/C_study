@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int gcd(int m, int n){
-    if (n == 0){
+    if (n == 0){  // base case
         return m;
     }
-    int remainder = m % n;
-    m = n;
-    n = remainder;
+    int remainder = m % n;  // get remainder
+    m = n;  // m <- n
+    n = remainder;  // n <- remainder
     return gcd(m, n);
 }
 

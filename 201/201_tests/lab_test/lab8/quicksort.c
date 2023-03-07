@@ -17,28 +17,28 @@ int *split(int a[], int *low, int *high){
 
     int part_element = *low;
 
-    for(;;){
+    for(;;){  // Infinite loop
 
-        while (low < high && part_element <= *high)
+        while (low < high && part_element <= *high)  // stop when element < part_element
             high --;
 
         if(low >= high)
             break;
 
-        *low = *high;
+        *low = *high;  // put the element to the left
         low ++;
 
-        while (low < high && *low <= part_element)
+        while (low < high && *low <= part_element)  // stop when element > part_element
             low++;
 
         if (low >= high)
             break;
 
-        *high = *low;
+        *high = *low;  // put the element to the right
         high --;
     }
 
-    *high = part_element;
+    *high = part_element;  // put part_element
 
     return high;
 }
