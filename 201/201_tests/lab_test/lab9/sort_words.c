@@ -1,7 +1,7 @@
 #include "str_quicksort.h"
 int read(char ** str_arr){
     _Bool flag = 1;
-    int str_num = 0, str_len = 0;
+    int str_num = 0, str_len = 0;  // number of strings and string length
     while(flag){
         str_arr[str_num] = malloc(sizeof (char));
         str_len = 0;
@@ -13,8 +13,6 @@ int read(char ** str_arr){
             // str_len start from 0, allocate for the next char
             str_arr[str_num] =(char*)realloc(str_arr[str_num], sizeof (char) * (str_len +2));
             str_arr[str_num][str_len++] = letter;
-
-            printf("char :  %c\n", str_arr[str_num][str_len-1]);
 
         }
         str_arr[str_num][str_len] = '\0';

@@ -18,7 +18,6 @@ int *split(int a[], int *low, int *high){
     int part_element = *low;
 
     for(;;){  // Infinite loop
-
         while (low < high && part_element <= *high)  // stop when element < part_element
             high --;
 
