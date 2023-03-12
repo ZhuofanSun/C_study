@@ -35,6 +35,14 @@ int main(){
     char *str_arr[20];
     * str_arr = malloc(sizeof (char));
     int str_num = read(str_arr);
+    if (str_arr[0][0] == '\0'){
+        return 0;
+    }
     quicksort(str_arr, str_arr, str_arr+str_num -1 );
+    printf("In sorted order: ");
+    for (int i = 0; i < str_num; ++i) {
+        printf("%s ", str_arr[i]);
+    }
+    printf(".\n");
     return 0;
 }

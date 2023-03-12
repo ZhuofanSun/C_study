@@ -136,6 +136,37 @@ build sort_words: C_EXECUTABLE_LINKER__sort_words_Debug CMakeFiles/sort_words.di
   TARGET_FILE = sort_words
   TARGET_PDB = sort_words.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target str_quicksort
+
+
+#############################################
+# Order-only phony target for str_quicksort
+
+build cmake_object_order_depends_target_str_quicksort: phony || CMakeFiles/str_quicksort.dir
+
+build CMakeFiles/str_quicksort.dir/str_quicksort.c.o: C_COMPILER__str_quicksort_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab9/str_quicksort.c || cmake_object_order_depends_target_str_quicksort
+  DEP_FILE = CMakeFiles/str_quicksort.dir/str_quicksort.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles/str_quicksort.dir
+  OBJECT_FILE_DIR = CMakeFiles/str_quicksort.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target str_quicksort
+
+
+#############################################
+# Link the executable str_quicksort
+
+build str_quicksort: C_EXECUTABLE_LINKER__str_quicksort_Debug CMakeFiles/str_quicksort.dir/str_quicksort.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/str_quicksort.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = str_quicksort
+  TARGET_PDB = str_quicksort.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -170,7 +201,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab9/cmake-build-debug
 
-build all: phony lab9 closest_flight sort_words
+build all: phony lab9 closest_flight sort_words str_quicksort
 
 # =============================================================================
 # Built-in targets

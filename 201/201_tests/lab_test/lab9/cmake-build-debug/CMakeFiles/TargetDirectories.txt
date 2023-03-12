@@ -1,5 +1,6 @@
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab9/cmake-build-debug/CMakeFiles/lab9.dir
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab9/cmake-build-debug/CMakeFiles/closest_flight.dir
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab9/cmake-build-debug/CMakeFiles/sort_words.dir
+/Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab9/cmake-build-debug/CMakeFiles/str_quicksort.dir
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab9/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab9/cmake-build-debug/CMakeFiles/rebuild_cache.dir

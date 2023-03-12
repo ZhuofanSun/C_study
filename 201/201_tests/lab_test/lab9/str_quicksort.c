@@ -1,15 +1,64 @@
 #include "str_quicksort.h"
 
-void quicksort(char* a[], char **low, char **high){
+_Bool lte(const char * a, const char * b){
+    int index = 0;
+    while (a[index] != '\0' && b[index] != '\0'){
+        if (a[index] == b[index]){
+            index ++;
+        }
+        else if ('A' <= a[index] && a[index]<= 'Z'){
+            if ('A' <= b[index] && b[index]<= 'Z'){
+                if (a[index] - 'A' + 'a' < b[index]- 'A' + 'a'){
+                    return 1;
+                }
+                else if (a[index] - 'A' + 'a' == b[index]- 'A' + 'a'){
+                    index ++;
+                }
+                else{
+                    return 0;
+                }
+            }
+            else{
+                if (a[index] - 'A' + 'a' < b[index]){
+                    return 1;
+                }
+                else if (a[index] - 'A' + 'a' == b[index]){
+                    index ++;
+                }
+                else{
+                    return 0;
+                }
+            }
 
-    char **middle;
+        }
+        else if ('A' <= b[index] && b[index]<= 'Z'){
+            if (a[index] < b[index] - 'A' + 'a'){
+                return 1;
+            }
+            else if (a[index] == b[index] - 'A' + 'a'){
+                index ++;
+            }
+            else{
+                return 0;
+            }
+        }
+        else if (a[index] < b[index]){
+            return 1;
+        }
+        else if (a[index] > b[index]){
+            return 0;
+        }
+        else
+            break;
+    }
 
-    if (low >= high)
-        return;
+    if (a[index] == '\0'){  // a==b
+        return 1;
+    }
+    else {
+        return 0;
+    }
 
-    middle = split(a, low, high);
-    quicksort(a, low, middle - 1);
-    quicksort(a, middle + 1, high);
 }
 
 char **split(char * a[], char **low, char **high){
@@ -18,7 +67,7 @@ char **split(char * a[], char **low, char **high){
 
     for(;;){  // Infinite loop
 
-        while (low < high && part_element <= *high)  // stop when element < part_element
+        while (low < high && lte(part_element, *high))  // stop when element < part_element
             high --;
 
         if(low >= high)
@@ -27,7 +76,7 @@ char **split(char * a[], char **low, char **high){
         *low = *high;  // put the element to the left
         low ++;
 
-        while (low < high && *low <= part_element)  // stop when element > part_element
+        while (low < high && lte(*low, part_element))  // stop when element > part_element
             low++;
 
         if (low >= high)
@@ -42,11 +91,14 @@ char **split(char * a[], char **low, char **high){
     return high;
 }
 
-_Bool lte(char * a, char * b){
-    int
+void quicksort(char* a[], char **low, char **high){
 
+    char **middle;
 
+    if (low >= high)
+        return;
 
+    middle = split(a, low, high);
+    quicksort(a, low, middle - 1);
+    quicksort(a, middle + 1, high);
 }
-
-
