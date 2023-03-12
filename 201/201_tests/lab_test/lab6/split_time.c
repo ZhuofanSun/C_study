@@ -34,12 +34,15 @@ long check_argument(char * argv){
 
 }
 int main(int argc, char * argv[]){
+    /*
     if (argc != 2){  // only accept 2 arguments
         fprintf(stderr, "Usage: ./split_time <The number of seconds>\n");
         return EXIT_FAILURE;
     }
 
     long total_sec = check_argument(argv[1]);  // check and convert str to long
+     */
+    int total_sec = 1000;
     int hr = -1, min = -1, sec = -1;  // initialize with -1
     split_time(total_sec, &hr, &min, &sec);  // main function
 

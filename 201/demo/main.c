@@ -26,7 +26,6 @@ int greatest_common_divisor(int num, int denom){
 
 }
 
-
 void arr_exchange(int arr[], int i, int j){
     if (i != j){
         int temp = arr[i];
@@ -55,8 +54,6 @@ int partition(int arr[], int p, int r){
     return i;
 }
 
-
-
 void quicksort(int arr[], int p, int r){
     if (p < r) {
 
@@ -77,6 +74,30 @@ int get_size(const int arr[], int capacity){
     return size;
 }
 
+void move(char start, char end, int n){
+    /*a：初始柱子, c：目标柱子，n：移动的第n个圆盘*/
+    printf("第 %d 个圆盘： %c --> %c\n", n, start, end);
+
+}
+
+void hanoi(char a, char b, char c, int n){
+    /*a：初始柱子，b：中间柱子存放，c：目标柱子，n：要从a到c的圆盘数量*/
+    if (n == 1){
+        move(a, c, n);
+    }
+    else {
+        hanoi(a, c, b, n-1);
+        move(a, c, n);
+        hanoi(b, a, c, n-1);
+    }
+
+}
+
+struct Student {
+    int id;
+    int age;
+    char * name;
+};
 int main(int argc, char **argv) {
 /*
     int num1, denom1, num2, denom2, result_num, result_denom;
@@ -105,7 +126,7 @@ int main(int argc, char **argv) {
     return 0;
 }
 */
-
+/*
     int arr[20] = {9,4,6,1,3,2,8, 5, 7};
     int capacity = sizeof (arr) / sizeof (arr[0]);
     int size = get_size(arr, capacity);
@@ -116,4 +137,14 @@ int main(int argc, char **argv) {
         printf("%d  ", arr[i]);
     }
     printf("\n");
+    */
+    hanoi('A', 'B', 'C',  2);
+    struct Student student = {.id = 1, .age = 10, .name = "Xiaoming"};
+    int a = student.age;
+    printf("xiaoming de age is: %d\n", a);
+    a = (student.age = 17);
+    printf("xiaoming de xin age is: %d\n", a);
+
+
+
 }
