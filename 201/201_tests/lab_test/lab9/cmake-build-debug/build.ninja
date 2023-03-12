@@ -99,6 +99,43 @@ build closest_flight: C_EXECUTABLE_LINKER__closest_flight_Debug CMakeFiles/close
   TARGET_FILE = closest_flight
   TARGET_PDB = closest_flight.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target sort_words
+
+
+#############################################
+# Order-only phony target for sort_words
+
+build cmake_object_order_depends_target_sort_words: phony || CMakeFiles/sort_words.dir
+
+build CMakeFiles/sort_words.dir/sort_words.c.o: C_COMPILER__sort_words_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab9/sort_words.c || cmake_object_order_depends_target_sort_words
+  DEP_FILE = CMakeFiles/sort_words.dir/sort_words.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles/sort_words.dir
+  OBJECT_FILE_DIR = CMakeFiles/sort_words.dir
+
+build CMakeFiles/sort_words.dir/str_quicksort.c.o: C_COMPILER__sort_words_Debug /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab9/str_quicksort.c || cmake_object_order_depends_target_sort_words
+  DEP_FILE = CMakeFiles/sort_words.dir/str_quicksort.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles/sort_words.dir
+  OBJECT_FILE_DIR = CMakeFiles/sort_words.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sort_words
+
+
+#############################################
+# Link the executable sort_words
+
+build sort_words: C_EXECUTABLE_LINKER__sort_words_Debug CMakeFiles/sort_words.dir/sort_words.c.o CMakeFiles/sort_words.dir/str_quicksort.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/sort_words.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sort_words
+  TARGET_PDB = sort_words.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -133,7 +170,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/sunzhuofan/Desktop/C_study/201/201_tests/lab_test/lab9/cmake-build-debug
 
-build all: phony lab9 closest_flight
+build all: phony lab9 closest_flight sort_words
 
 # =============================================================================
 # Built-in targets

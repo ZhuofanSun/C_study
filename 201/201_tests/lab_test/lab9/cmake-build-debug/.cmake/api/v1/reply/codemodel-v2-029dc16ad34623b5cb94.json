@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,7 +33,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -50,6 +52,13 @@
 					"id" : "lab9::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-lab9-Debug-c99bd6d1dcefa2ea5847.json",
 					"name" : "lab9",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sort_words::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sort_words-Debug-ac2f808ad3e7208e46d8.json",
+					"name" : "sort_words",
 					"projectIndex" : 0
 				}
 			]
